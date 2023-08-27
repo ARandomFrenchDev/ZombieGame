@@ -45,8 +45,13 @@ public class Weapon : MonoBehaviour
 
     void DamageBulletHandle(RaycastHit hit) {
         EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
-        if (target == null) return;
-        target.DecreaseHealth(damage);
+        if (target == null) {
+            return;
+        } else {
+            target.DecreaseHealth(damage);
+            EnemyAI enemyAI = target.GetComponent<EnemyAI>();
+            enemyAI.isProvoked = true;
+        }
 
     }
 }

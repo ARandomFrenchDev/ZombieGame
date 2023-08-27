@@ -9,16 +9,19 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] Transform target;
     [SerializeField] float chaseRange = 5f;
     NavMeshAgent navMeshAgent;
+    Animator enemyAnimation;
     float distanceToTarget = Mathf.Infinity;
-    bool isProvoked = false;
+    public bool isProvoked = false;
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        enemyAnimation = GetComponent<Animator>();
     }
     void Update()
     {
         distanceToTarget = Vector3.Distance(target.position, transform.position);
         if(isProvoked) {
+            enemyAnimation.SetBool("isProvoked", true);
             EngageTarget();
         } 
         else if (distanceToTarget <= chaseRange) {
@@ -26,6 +29,7 @@ public class EnemyAI : MonoBehaviour
         }
         else if (distanceToTarget > chaseRange) {
             isProvoked = false;
+            enemyAnimation.SetBool("isProvoked", false);
         }
 
     }
@@ -40,11 +44,13 @@ public class EnemyAI : MonoBehaviour
     }
 
     private void ChaseTarget() {
+        enemyAnimation.SetBool("isInAttackRange", false);
         navMeshAgent.SetDestination(target.position);
 
     }
 
     private void AttackTarget() {
+        enemyAnimation.SetBool("isInAttackRange", true);
         Debug.Log("MANGER HUMAIN.");
     }
 
