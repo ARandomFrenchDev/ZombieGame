@@ -9,6 +9,11 @@ public class Weapon : MonoBehaviour
     [SerializeField] GameObject hitEffect;
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 30f;
+    Animator anim;
+
+    void Start() {
+        anim = transform.GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -19,6 +24,7 @@ public class Weapon : MonoBehaviour
 
     private void Shoot() {
         muzzleFlash.Play();
+        anim.SetTrigger("isShooting");
         RaycastHandle();
     }
 

@@ -10,8 +10,10 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] float chaseRange = 5f;
     NavMeshAgent navMeshAgent;
     Animator enemyAnimation;
+    float turnSpeed = 5f;
     float distanceToTarget = Mathf.Infinity;
     public bool isProvoked = false;
+
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -35,6 +37,7 @@ public class EnemyAI : MonoBehaviour
     }
 
     private void EngageTarget() {
+        FaceTarget();
         if(distanceToTarget >= navMeshAgent.stoppingDistance) {
             ChaseTarget();
         }
@@ -51,7 +54,12 @@ public class EnemyAI : MonoBehaviour
 
     private void AttackTarget() {
         enemyAnimation.SetBool("isInAttackRange", true);
-        Debug.Log("MANGER HUMAIN.");
+    }
+
+    private void FaceTarget() {
+        Vector3 direction = (target.position - transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);
     }
 
     void OnDrawGizmosSelected()
@@ -60,4 +68,6 @@ public class EnemyAI : MonoBehaviour
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, chaseRange);
     }
+
+    
 }
