@@ -6,15 +6,21 @@ using UnityEngine.SceneManagement;
 
 public class GameOverMenu : MonoBehaviour
 {
-    // StarterAssets.StarterAssetsInputs starterAssetsInputs;
+    StarterAssets.StarterAssetsInputs starterAssetsInputs;
+
+    private void Start() {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        starterAssetsInputs = player.GetComponent<StarterAssets.StarterAssetsInputs>();
+    }   
 
     public void ReloadLevel() {
-        // starterAssetsInputs.cursorLocked = true;
-        // starterAssetsInputs.cursorInputForLook = true;
- 
-        // starterAssetsInputs.SetCursorState(starterAssetsInputs.cursorLocked);
+        starterAssetsInputs.cursorLocked = true;
+        starterAssetsInputs.cursorInputForLook = true;
+        starterAssetsInputs.SetCursorState(starterAssetsInputs.cursorLocked);
         Debug.Log("reloading level");
         SceneManager.LoadScene(0);
+        Time.timeScale = 1.0f;
+        Cursor.visible = false;
     }
 
     public void QuitLevel() {

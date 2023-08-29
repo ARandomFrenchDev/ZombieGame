@@ -55,8 +55,6 @@ public class Weapon : MonoBehaviour
             return;
         } else {
             target.DecreaseHealth(damage);
-            EnemyAI enemyAI = target.GetComponent<EnemyAI>();
-            enemyAI.isProvoked = true;
         }
 
     }
