@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 23721892672346882}
   - component: {fileID: 64273952590832386}
   m_Layer: 0
-  m_Name: SM_Wep_Pistol_Heavy_01
+  m_Name: Pistol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

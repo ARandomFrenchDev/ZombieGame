@@ -7,6 +7,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] Camera FPCamera;
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject hitEffect;
+    [SerializeField] Ammo ammoSlot;
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 30f;
     Animator anim;
@@ -18,11 +19,16 @@ public class Weapon : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Mouse0)) {
-            Shoot();
+            if(ammoSlot.GetAmmoCount() > 0) {
+                Shoot();
+            } else {
+                Debug.Log("No more ammos to shoot. GLHF.");
+            }
         }
     }
 
     private void Shoot() {
+        ammoSlot.ReduceAmmo();
         muzzleFlash.Play();
         anim.SetTrigger("isShooting");
         RaycastHandle();
