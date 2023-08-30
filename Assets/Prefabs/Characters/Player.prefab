@@ -437,6 +437,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 4045138515876503626}
     m_Modifications:
     - target: {fileID: -3029296398920355656, guid: 9ec98e8c57546a746a43196444d9c97f, type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 5256582792438516735}
+    - target: {fileID: -3029296398920355656, guid: 9ec98e8c57546a746a43196444d9c97f, type: 3}
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 5432258712460956293}
@@ -751,6 +755,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5326129663328656912, guid: ba5127df570cdd741a4836515f018593, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5330773513070314879, guid: ba5127df570cdd741a4836515f018593, type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 5256582792438516735}
+    - target: {fileID: 5330773513070314879, guid: ba5127df570cdd741a4836515f018593, type: 3}
+      propertyPath: ammoSlot
+      value: 
+      objectReference: {fileID: 5432258712460956293}
+    - target: {fileID: 5330773513070314879, guid: ba5127df570cdd741a4836515f018593, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 6914564629777570713, guid: 81509e208b4c4b444aeeff75104477ae, type: 3}
+    - target: {fileID: 5331748993715215856, guid: ba5127df570cdd741a4836515f018593, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
