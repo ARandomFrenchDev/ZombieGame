@@ -7,19 +7,15 @@ using StarterAssets;
 public class WeaponZoom : MonoBehaviour
 {
     [SerializeField] CinemachineVirtualCamera fpsCamera;
+    [SerializeField] FirstPersonController firstPersonController;
     [SerializeField] float normalFOV = 60f;
     [SerializeField] float zoomedFOV = 20f;
-    FirstPersonController firstPersonController;
     [SerializeField] float normalRotationSpeed = 1.0f;
     [SerializeField] float normalMoveSpeed = 4.0f;
     [SerializeField] float normalSprintSpeed = 6.0f;
     [SerializeField] float zoomedRotationSpeed = 0.1f;
     [SerializeField] float zoomedMoveSpeed = 1f;
     [SerializeField] float zoomedSprintSpeed = 0.2f;
-
-    void Start() {
-        firstPersonController = GetComponent<FirstPersonController>();
-    }
  
     void Update()
     {

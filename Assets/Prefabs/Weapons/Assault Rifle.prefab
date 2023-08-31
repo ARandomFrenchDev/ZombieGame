@@ -257,6 +257,7 @@ GameObject:
   - component: {fileID: 64680976172880162}
   - component: {fileID: 1032833917}
   - component: {fileID: 3802319663056026252}
+  - component: {fileID: 1267027301696192265}
   m_Layer: 0
   m_Name: Assault Rifle
   m_TagString: Untagged
@@ -386,6 +387,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1267027301696192265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296539039355890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5718a5b59b3c8e048a795ca731fa72c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpsCamera: {fileID: 0}
+  normalFOV: 60
+  zoomedFOV: 20
+  normalRotationSpeed: 1
+  normalMoveSpeed: 4
+  normalSprintSpeed: 6
+  zoomedRotationSpeed: 0.1
+  zoomedMoveSpeed: 1
+  zoomedSprintSpeed: 0.2
 --- !u!1 &1764537760694094
 GameObject:
   m_ObjectHideFlags: 0

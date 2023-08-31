@@ -59,9 +59,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7810383676487538341, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: fpsCamera
+      value: 
+      objectReference: {fileID: 8762286023174238680}
     - target: {fileID: 9076432472886934110, guid: aebf99355e977334b91716908f390a78, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3750331121476236422, guid: aebf99355e977334b91716908f390a78, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: aebf99355e977334b91716908f390a78, type: 3}
+--- !u!114 &8762286023174238680 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5589599350171469069, guid: aebf99355e977334b91716908f390a78, type: 3}
+  m_PrefabInstance: {fileID: 3750331120979424469}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
