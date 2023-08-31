@@ -10,7 +10,10 @@ public class Weapon : MonoBehaviour
     [SerializeField] Ammo ammoSlot;
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 30f;
+    [SerializeField] float timeBetweenShots = 1f;
     Animator anim;
+
+    bool canShoot = true;
 
     void Start() {
         anim = transform.GetComponent<Animator>();
@@ -18,20 +21,23 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Mouse0)) {
+        if(Input.GetKeyDown(KeyCode.Mouse0) && canShoot) {
             if(ammoSlot.GetAmmoCount() > 0) {
-                Shoot();
+                StartCoroutine(Shoot());
             } else {
                 Debug.Log("No more ammos to shoot. GLHF.");
             }
         }
     }
 
-    private void Shoot() {
+    IEnumerator Shoot() {
+        canShoot = false;
         ammoSlot.ReduceAmmo();
         muzzleFlash.Play();
         anim.SetTrigger("isShooting");
         RaycastHandle();
+        yield return new WaitForSeconds(timeBetweenShots);
+        canShoot = true;
     }
 
     void RaycastHandle() {

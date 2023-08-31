@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &5345482889698489287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876198911390504094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a83da85a40bc064aa749d918df9d1ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWeapon: 1
 --- !u!1001 &3750331120979424469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7,9 +20,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2744666180329942882, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833827060403745537, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: damage
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833827060403745537, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: timeBetweenShots
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3113493063849711014, guid: aebf99355e977334b91716908f390a78, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3158550994711453624, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823175336931892389, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4872688537504060033, guid: aebf99355e977334b91716908f390a78, type: 3}
       propertyPath: m_Name
@@ -59,17 +92,53 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5432258712460956293, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: ammoAmount
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7810383676487538341, guid: aebf99355e977334b91716908f390a78, type: 3}
       propertyPath: fpsCamera
       value: 
       objectReference: {fileID: 8762286023174238680}
+    - target: {fileID: 7810383676487538341, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: firstPersonController
+      value: 
+      objectReference: {fileID: 8616685848737228371}
+    - target: {fileID: 9075153525193958097, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: range
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 9075153525193958097, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: timeBetweenShots
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 9076432472886934110, guid: aebf99355e977334b91716908f390a78, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9134522776257261836, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: range
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3750331121476236422, guid: aebf99355e977334b91716908f390a78, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: aebf99355e977334b91716908f390a78, type: 3}
+--- !u!114 &8616685848737228371 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4872688537504060038, guid: aebf99355e977334b91716908f390a78, type: 3}
+  m_PrefabInstance: {fileID: 3750331120979424469}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55919ac34a26952479f3fc91f777b2fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &876198911390504094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4045138515876503627, guid: aebf99355e977334b91716908f390a78, type: 3}
+  m_PrefabInstance: {fileID: 3750331120979424469}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8762286023174238680 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5589599350171469069, guid: aebf99355e977334b91716908f390a78, type: 3}
