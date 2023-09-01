@@ -11,9 +11,9 @@ public class Weapon : MonoBehaviour
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 30f;
     [SerializeField] float timeBetweenShots = 1f;
-    Animator anim;
 
-    bool canShoot = true;
+    [SerializeField] public bool canShoot = true;
+    Animator anim;
 
     void Start() {
         anim = transform.GetComponent<Animator>();
@@ -29,6 +29,11 @@ public class Weapon : MonoBehaviour
             }
         }
     }
+
+    // How to fix Coroutine when switching weapons 
+    // 1) Setup a WaitUntil() Coroutine, with a bool assigned named "isSwitching"
+    // 2) When switching, if the counter is lower than the initial counter but higher than 0, isSwitching goes to true
+    // 3) When switching back on it, isSwitching goes back to false, counter takes the remaining counter and finishes the Coroutine
 
     IEnumerator Shoot() {
         canShoot = false;

@@ -52,8 +52,12 @@ public class WeaponSwitcher : MonoBehaviour
         foreach(Transform weapon in transform) {
             if(weaponIndex == currentWeapon) {
                 weapon.gameObject.SetActive(true);
+                weapon.GetComponent<Weapon>().canShoot = true;
+                // weapon.GetComponent<Animator>().enabled = true;
             } else {
                 weapon.gameObject.SetActive(false);
+                // weapon.GetComponent<Animator>().Rebind();
+                // weapon.GetComponent<Animator>().enabled = false;
             }
             weaponIndex++;
         }
