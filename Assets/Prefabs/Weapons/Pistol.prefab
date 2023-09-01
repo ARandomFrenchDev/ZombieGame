@@ -280,8 +280,11 @@ MonoBehaviour:
   muzzleFlash: {fileID: 9024284624862149831, guid: 95bf949e88af3e345872265726f5c0d7, type: 3}
   hitEffect: {fileID: 6914564629777570713, guid: 81509e208b4c4b444aeeff75104477ae, type: 3}
   ammoSlot: {fileID: 0}
+  ammoType: 2
   range: 30
   damage: 30
+  timeBetweenShots: 1
+  canShoot: 1
 --- !u!95 &5492523489923734100
 Animator:
   serializedVersion: 3

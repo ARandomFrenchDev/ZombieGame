@@ -304,7 +304,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cbe05b97570542439a98b75c915f763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 100
+  ammoSlots:
+  - ammoType: 0
+    ammoAmount: 20
+  - ammoType: 1
+    ammoAmount: 10
+  - ammoType: 2
+    ammoAmount: 30
 --- !u!95 &3750331121743152033
 Animator:
   serializedVersion: 3
@@ -492,6 +498,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5432258712460956293}
     - target: {fileID: 90522470312405117, guid: 68317e2c4c57a6e45be7063240f91cbb, type: 3}
+      propertyPath: ammoType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 90522470312405117, guid: 68317e2c4c57a6e45be7063240f91cbb, type: 3}
       propertyPath: timeBetweenShots
       value: 0.1
       objectReference: {fileID: 0}
@@ -516,6 +526,10 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 5432258712460956293}
+    - target: {fileID: -3029296398920355656, guid: 9ec98e8c57546a746a43196444d9c97f, type: 3}
+      propertyPath: ammoType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1345368308290578, guid: 9ec98e8c57546a746a43196444d9c97f, type: 3}
       propertyPath: m_Name
       value: Shotgun
