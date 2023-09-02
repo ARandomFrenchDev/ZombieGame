@@ -21,19 +21,23 @@ public class EnemyAI : MonoBehaviour
     }
     void Update()
     {
-        distanceToTarget = Vector3.Distance(target.position, transform.position);
-        if(isProvoked) {
-            enemyAnimation.SetBool("isProvoked", true);
-            EngageTarget();
-        } 
-        else if (distanceToTarget <= chaseRange) {
-            isProvoked = true;
+        if(GetComponent<EnemyHealth>().IsDead() != true) {
+            distanceToTarget = Vector3.Distance(target.position, transform.position);
+            if(isProvoked) {
+                enemyAnimation.SetBool("isProvoked", true);
+                EngageTarget();
+            } 
+            else if (distanceToTarget <= chaseRange) {
+                isProvoked = true;
+            }
+            else if (distanceToTarget > chaseRange) {
+                isProvoked = false;
+                enemyAnimation.SetBool("isProvoked", false);
+            }
+        } else {
+            navMeshAgent.enabled = false;
+            GetComponent<CapsuleCollider>().enabled = false;
         }
-        else if (distanceToTarget > chaseRange) {
-            isProvoked = false;
-            enemyAnimation.SetBool("isProvoked", false);
-        }
-
     }
 
     public void OnDamageTaken() {
