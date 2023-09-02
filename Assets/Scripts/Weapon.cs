@@ -22,13 +22,13 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        // if(Input.GetKeyDown(KeyCode.Mouse0) && canShoot) {
-        //     if(ammoSlot.GetAmmoCount() > 0) {
-        //         StartCoroutine(Shoot());
-        //     } else {
-        //         Debug.Log("No more ammos to shoot. GLHF.");
-        //     }
-        // }
+        if(Input.GetKeyDown(KeyCode.Mouse0) && canShoot) {
+            if(ammoSlot.GetAmmoCount(ammoType) > 0) {
+                StartCoroutine(Shoot());
+            } else {
+                Debug.Log("No more ammos to shoot. GLHF.");
+            }
+        }
     }
 
     // How to fix Coroutine when switching weapons 
@@ -38,7 +38,7 @@ public class Weapon : MonoBehaviour
 
     IEnumerator Shoot() {
         canShoot = false;
-        // ammoSlot.ReduceAmmo();
+        ammoSlot.ReduceAmmo(ammoType);
         muzzleFlash.Play();
         anim.SetTrigger("isShooting");
         RaycastHandle();
