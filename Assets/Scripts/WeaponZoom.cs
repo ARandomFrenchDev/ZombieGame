@@ -45,7 +45,7 @@ public class WeaponZoom : MonoBehaviour
         firstPersonController.SprintSpeed = normalSprintSpeed;
     }
 
-    void OnDisable() {
+    void OnDisable() { // when switching weapon
         DezoomView();
     }
 

@@ -13,6 +13,11 @@ public class Ammo : MonoBehaviour
         public int ammoAmount;
     }
 
+    public void AddAmmo(AmmoType ammoType, int ammoAmount) {
+        AmmoSlot slot = GetAmmoSlot(ammoType);
+        slot.ammoAmount = slot.ammoAmount + ammoAmount;
+    }
+
     public void ReduceAmmo(AmmoType ammoType) {
         AmmoSlot slot = GetAmmoSlot(ammoType);
         slot.ammoAmount--;
