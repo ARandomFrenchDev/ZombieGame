@@ -25,10 +25,7 @@ public class WeaponZoom : MonoBehaviour
         }
         else
         {
-            fpsCamera.m_Lens.FieldOfView = normalFOV;
-            firstPersonController.RotationSpeed = normalRotationSpeed;
-            firstPersonController.MoveSpeed = normalMoveSpeed;
-            firstPersonController.SprintSpeed = normalSprintSpeed;
+            DezoomView();
         }
     }
  
@@ -39,4 +36,18 @@ public class WeaponZoom : MonoBehaviour
         firstPersonController.MoveSpeed = zoomedMoveSpeed;
         firstPersonController.SprintSpeed = zoomedSprintSpeed;
     }
+
+    void DezoomView() 
+    {
+        fpsCamera.m_Lens.FieldOfView = normalFOV;
+        firstPersonController.RotationSpeed = normalRotationSpeed;
+        firstPersonController.MoveSpeed = normalMoveSpeed;
+        firstPersonController.SprintSpeed = normalSprintSpeed;
+    }
+
+    void OnDisable() {
+        DezoomView();
+    }
+
+
 }
