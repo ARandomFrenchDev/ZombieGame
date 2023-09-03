@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class Flashlight : MonoBehaviour
 {
-    [SerializeField] float timeFlash = 45f;
+    [SerializeField] float speedFlash = 5f;
     [SerializeField] Light mainSpotLight;
 
     void Update() {
-        StartCoroutine(HandleTime(timeFlash));
+        HandleTime();
     }
 
-    IEnumerator HandleTime(float timeFlash) {
-        yield return new WaitForSeconds(timeFlash);
-        mainSpotLight.enabled = false;
+    private void HandleTime() {
+        mainSpotLight.intensity -= speedFlash * Time.deltaTime;
     }
 
-    void ActivateFlashlight() {
-        mainSpotLight.enabled = true;
+    public void ActivateFlashlight() {
+        mainSpotLight.intensity = 3;
     }
  }

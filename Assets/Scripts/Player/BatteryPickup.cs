@@ -10,6 +10,7 @@ public class BatteryPickup : MonoBehaviour
     
     void OnTriggerEnter(Collider other) {
         if(other.gameObject.tag == "Player") {
+            FindObjectOfType<Flashlight>().ActivateFlashlight();
             Destroy(gameObject);
         }
     }
