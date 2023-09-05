@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
@@ -12,6 +13,8 @@ public class Weapon : MonoBehaviour
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 30f;
     [SerializeField] float timeBetweenShots = 1f;
+    [SerializeField] TMP_Text ammoTypeTextUI;
+    [SerializeField] TMP_Text ammoAmmountTextUI;
 
     [SerializeField] public bool canShoot = true;
     Animator anim;
@@ -22,6 +25,7 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
+        DisplayAmmoUI();
         if(Input.GetKeyDown(KeyCode.Mouse0) && canShoot) {
             if(ammoSlot.GetAmmoCount(ammoType) > 0) {
                 StartCoroutine(Shoot());
@@ -29,6 +33,11 @@ public class Weapon : MonoBehaviour
                 Debug.Log("No more ammos to shoot. GLHF.");
             }
         }
+    }
+
+    void DisplayAmmoUI() {
+        ammoAmmountTextUI.text = ammoSlot.GetAmmoCount(ammoType).ToString();
+        ammoTypeTextUI.text = gameObject.name;
     }
 
     // How to fix Coroutine when switching weapons 
