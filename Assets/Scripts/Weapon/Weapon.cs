@@ -63,7 +63,9 @@ public class Weapon : MonoBehaviour
         // Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the Scene.
         if (Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, range))
         {
-            ParticleBulletHitEffect(hit);
+            if(hit.transform.tag == "Enemy") {
+                ParticleBulletHitEffect(hit);
+            }
 
             DamageBulletHandle(hit);
 
