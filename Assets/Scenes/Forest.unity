@@ -7042,6 +7042,10 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 1794043475}
+    - target: {fileID: 1141837592, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1352640762007111017, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_Intensity
       value: 60
@@ -11918,9 +11922,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: POST PROCESSING
       objectReference: {fileID: 0}
+    - target: {fileID: 5131910438249181, guid: bc391daee5ccdd049bc4344ba924d173, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6850426959886344465, guid: bc391daee5ccdd049bc4344ba924d173, type: 3}
       propertyPath: priority
       value: 3.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 6850426959886344465, guid: bc391daee5ccdd049bc4344ba924d173, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6850426959886344465, guid: bc391daee5ccdd049bc4344ba924d173, type: 3}
       propertyPath: sharedProfile
