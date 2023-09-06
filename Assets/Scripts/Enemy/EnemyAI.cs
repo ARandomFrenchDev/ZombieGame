@@ -8,8 +8,10 @@ public class EnemyAI : MonoBehaviour
 
     [SerializeField] Transform target;
     [SerializeField] float chaseRange = 5f;
+    [SerializeField] AudioClip zombieIdleClip;
     NavMeshAgent navMeshAgent;
     Animator enemyAnimation;
+    AudioSource audioSource;
     float turnSpeed = 5f;
     float distanceToTarget = Mathf.Infinity;
     public bool isProvoked = false;
@@ -18,6 +20,8 @@ public class EnemyAI : MonoBehaviour
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         enemyAnimation = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+        audioSource.pitch = Random.Range(0.5f, 1f);
     }
     void Update()
     {

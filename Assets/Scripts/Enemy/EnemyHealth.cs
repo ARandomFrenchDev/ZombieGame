@@ -33,6 +33,7 @@ public class EnemyHealth : MonoBehaviour
     void EnemyDeath() {
         if(isDead) return;
         GetComponent<Animator>().SetTrigger("isDead");
+        GetComponent<AudioSource>().enabled = false;
         isDead = true;
         Debug.Log("Enemy has been killed.");
     }
