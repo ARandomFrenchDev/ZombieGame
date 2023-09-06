@@ -15,6 +15,8 @@ public class Weapon : MonoBehaviour
     [SerializeField] float timeBetweenShots = 1f;
     [SerializeField] TMP_Text ammoTypeTextUI;
     [SerializeField] TMP_Text ammoAmmountTextUI;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip shootAudio;
 
     [SerializeField] public bool canShoot = true;
     Animator anim;
@@ -47,6 +49,8 @@ public class Weapon : MonoBehaviour
 
     IEnumerator Shoot() {
         canShoot = false;
+        audioSource.pitch = Random.Range(0.9f, 1f);
+        audioSource.PlayOneShot(shootAudio);
         ammoSlot.ReduceAmmo(ammoType);
         muzzleFlash.Play();
         anim.SetTrigger("isShooting");
