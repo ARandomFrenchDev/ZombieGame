@@ -17,6 +17,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] TMP_Text ammoAmmountTextUI;
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip shootAudio;
+    [SerializeField] AudioClip emptyAudio;
 
     [SerializeField] public bool canShoot = true;
     Animator anim;
@@ -32,6 +33,8 @@ public class Weapon : MonoBehaviour
             if(ammoSlot.GetAmmoCount(ammoType) > 0) {
                 StartCoroutine(Shoot());
             } else {
+                audioSource.pitch = Random.Range(0.9f, 1f);
+                audioSource.PlayOneShot(emptyAudio);
                 Debug.Log("No more ammos to shoot. GLHF.");
             }
         }
