@@ -7,13 +7,20 @@ public class EnemyHealth : MonoBehaviour
 {
 
     [SerializeField] float hitPoints = 100f;
+    [SerializeField] AudioClip deathSound;
 
     bool isDead = false;
+    AudioSource audioSource;
+
 
     // Update is called once per frame
 
     public bool IsDead() {
         return isDead;
+    }
+
+    void Start() {
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -33,7 +40,10 @@ public class EnemyHealth : MonoBehaviour
     void EnemyDeath() {
         if(isDead) return;
         GetComponent<Animator>().SetTrigger("isDead");
-        GetComponent<AudioSource>().enabled = false;
+        // audioSource.Stop();
+        audioSource.loop = false;
+        audioSource.PlayOneShot(deathSound);
+
         isDead = true;
         Debug.Log("Enemy has been killed.");
     }

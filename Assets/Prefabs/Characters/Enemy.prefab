@@ -149,6 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   chaseRange: 5
+  zombieIdleClip: {fileID: 8300000, guid: 05f83fc360665b045b60899ba4eb4fa4, type: 3}
   isProvoked: 0
 --- !u!114 &482605203
 MonoBehaviour:
@@ -163,6 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
+  deathSound: {fileID: 8300000, guid: d405d90ab3aed45498fe62fd7745ce69, type: 3}
 --- !u!114 &7482357574613543475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,7 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDamage: 34
-  attackSound: {fileID: 0}
+  attackSound: {fileID: 8300000, guid: ae17c9f1b7e432e4e9d30713d18b8446, type: 3}
 --- !u!82 &3543445105005134546
 AudioSource:
   m_ObjectHideFlags: 0
