@@ -41,7 +41,7 @@ public class EnemyHealth : MonoBehaviour
         if(isDead) return;
         GetComponent<Animator>().SetTrigger("isDead");
         // audioSource.Stop();
-        audioSource.loop = false;
+        audioSource.pitch = Random.Range(0.8f, 1f);
         audioSource.PlayOneShot(deathSound);
 
         isDead = true;
