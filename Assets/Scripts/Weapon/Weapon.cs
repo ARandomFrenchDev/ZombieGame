@@ -18,6 +18,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip shootAudio;
     [SerializeField] AudioClip emptyAudio;
+    [SerializeField] AudioClip hitAudio;
 
     [SerializeField] public bool canShoot = true;
     Animator anim;
@@ -71,6 +72,9 @@ public class Weapon : MonoBehaviour
         if (Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, range))
         {
             if(hit.transform.tag == "Enemy") {
+                AudioSource audioSourceEnnemy = hit.transform.GetComponent<AudioSource>();
+                audioSourceEnnemy.pitch = Random.Range(0.5f, 1f);
+                audioSourceEnnemy.PlayOneShot(hitAudio);
                 ParticleBulletHitEffect(hit);
             }
 

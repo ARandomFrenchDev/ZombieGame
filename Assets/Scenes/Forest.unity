@@ -6734,6 +6734,10 @@ PrefabInstance:
       value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1393895947596138452, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: hitAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 131c16dfd746a934b963bdd2c5fd099a, type: 3}
+    - target: {fileID: 1393895947596138452, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: emptyAudio
       value: 
       objectReference: {fileID: 8300000, guid: 120a052f1f8cefa43a1195d72c0c2550, type: 3}
@@ -6746,6 +6750,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 650958025}
     - target: {fileID: 5330773513584498180, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: hitAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 131c16dfd746a934b963bdd2c5fd099a, type: 3}
+    - target: {fileID: 5330773513584498180, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: emptyAudio
       value: 
       objectReference: {fileID: 8300000, guid: 120a052f1f8cefa43a1195d72c0c2550, type: 3}
@@ -6757,6 +6765,10 @@ PrefabInstance:
       propertyPath: ammoAmmountTextUI
       value: 
       objectReference: {fileID: 650958025}
+    - target: {fileID: 5390670600561051097, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: hitAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 131c16dfd746a934b963bdd2c5fd099a, type: 3}
     - target: {fileID: 5390670600561051097, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: emptyAudio
       value: 
