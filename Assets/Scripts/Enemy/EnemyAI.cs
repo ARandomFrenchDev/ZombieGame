@@ -28,6 +28,7 @@ public class EnemyAI : MonoBehaviour
         if(GetComponent<EnemyHealth>().IsDead() != true) {
             distanceToTarget = Vector3.Distance(target.position, transform.position);
             if(isProvoked) {
+                audioSource.loop = false;
                 enemyAnimation.SetBool("isProvoked", true);
                 EngageTarget();
             } 
