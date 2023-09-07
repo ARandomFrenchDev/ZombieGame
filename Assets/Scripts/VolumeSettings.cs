@@ -7,10 +7,11 @@ public class VolumeSettings : MonoBehaviour
 {
     [SerializeField] Slider sfxVolumeSlider;
     [SerializeField] Canvas settingsCanvas;
-    public float sfxVolume; 
+    public float sfxVolume = 1f; 
     CursorHandler cursorHandler;
 
     void Start() {
+        sfxVolumeSlider.value = sfxVolume;
         settingsCanvas.enabled = false;
         cursorHandler = FindObjectOfType<CursorHandler>();
     }
