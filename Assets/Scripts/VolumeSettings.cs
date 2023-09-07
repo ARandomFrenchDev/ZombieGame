@@ -25,6 +25,5 @@ public class VolumeSettings : MonoBehaviour
     // Update is called once per frame
     public void ChangeSFXVolume() {
         sfxVolume = sfxVolumeSlider.value;
-        Debug.Log(sfxVolumeSlider.value);
     }
  }
