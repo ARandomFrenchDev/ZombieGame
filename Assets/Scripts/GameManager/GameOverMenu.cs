@@ -16,12 +16,12 @@ public class GameOverMenu : MonoBehaviour
     public void ReloadLevel() {
         cursorHandler.SetCursorInMenuState(true);
         Debug.Log("reloading level");
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         Time.timeScale = 1.0f;
     }
 
     public void QuitLevel() {
-        Application.Quit();
+        SceneManager.LoadScene(0);
     }
 
 }
