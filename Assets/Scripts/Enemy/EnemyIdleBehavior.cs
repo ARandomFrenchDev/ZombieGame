@@ -38,9 +38,9 @@ public class EnemyIdleBehavior : StateMachineBehaviour
     }
 
     private void ResetIdle() {
-        if(isTriggered) {
-            trigerredAnimation--;
-        }
+        // if(isTriggered) {
+        //     trigerredAnimation--;
+        // }
 
         isTriggered = false;
         idleTime = 0;

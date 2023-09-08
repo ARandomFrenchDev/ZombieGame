@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 139023ed12af4d3489d009d854431a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeUntilSwitch: 2
+  timeUntilSwitch: 1
   animationRange: 2
 --- !u!91 &9100000
 AnimatorController:
