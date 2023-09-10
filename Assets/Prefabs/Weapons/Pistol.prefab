@@ -182,7 +182,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4415442749456168
 Transform:
   m_ObjectHideFlags: 0
@@ -282,8 +282,14 @@ MonoBehaviour:
   ammoSlot: {fileID: 0}
   ammoType: 2
   range: 30
-  damage: 30
-  timeBetweenShots: 1
+  damage: 15
+  timeBetweenShots: 0.1
+  ammoTypeTextUI: {fileID: 0}
+  ammoAmmountTextUI: {fileID: 0}
+  audioSource: {fileID: 0}
+  shootAudio: {fileID: 0}
+  emptyAudio: {fileID: 0}
+  hitAudio: {fileID: 0}
   canShoot: 1
 --- !u!95 &5492523489923734100
 Animator:

@@ -12,18 +12,15 @@ public class VolumeSettings : MonoBehaviour
     void Start() {
         sfxVolumeSlider.value = PlayerPrefs.GetFloat("sfxVolume");
         musicVolumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
-        Debug.Log(PlayerPrefs.GetFloat("musicVolume"));
         // settingsCanvas.enabled = false;
     }
 
     public void ChangeSFXVolume() {
         PlayerPrefs.SetFloat("sfxVolume", sfxVolumeSlider.value);
-        Debug.Log(PlayerPrefs.GetFloat("sfxVolume"));
         PlayerPrefs.Save();
     }
     public void ChangeMusicVolume() {
         PlayerPrefs.SetFloat("musicVolume", musicVolumeSlider.value);
-        Debug.Log(PlayerPrefs.GetFloat("musicVolume"));
         PlayerPrefs.Save();
     }
  }

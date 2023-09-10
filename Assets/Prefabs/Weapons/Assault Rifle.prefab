@@ -256,8 +256,8 @@ GameObject:
   - component: {fileID: 23775215876747556}
   - component: {fileID: 64680976172880162}
   - component: {fileID: 1032833917}
-  - component: {fileID: 3802319663056026252}
   - component: {fileID: 1267027301696192265}
+  - component: {fileID: 3750331121743152033}
   m_Layer: 0
   m_Name: Assault Rifle
   m_TagString: Untagged
@@ -345,7 +345,7 @@ MeshCollider:
   m_GameObject: {fileID: 1296539039355890}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -367,29 +367,16 @@ MonoBehaviour:
   hitEffect: {fileID: 1362418652685942, guid: b369efb4abe69e044890b664115fab9e, type: 3}
   ammoSlot: {fileID: 0}
   ammoType: 0
-  range: 100
+  range: 50
   damage: 30
-  timeBetweenShots: 1
+  timeBetweenShots: 0.3
+  ammoTypeTextUI: {fileID: 0}
+  ammoAmmountTextUI: {fileID: 0}
+  audioSource: {fileID: 0}
+  shootAudio: {fileID: 0}
+  emptyAudio: {fileID: 0}
+  hitAudio: {fileID: 0}
   canShoot: 1
---- !u!95 &3802319663056026252
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296539039355890}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 682373488f3148547813f692c35b747e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1267027301696192265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,6 +399,25 @@ MonoBehaviour:
   zoomedRotationSpeed: 0.1
   zoomedMoveSpeed: 1
   zoomedSprintSpeed: 0.2
+--- !u!95 &3750331121743152033
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296539039355890}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 682373488f3148547813f692c35b747e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1764537760694094
 GameObject:
   m_ObjectHideFlags: 0

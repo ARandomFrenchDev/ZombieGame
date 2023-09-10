@@ -102,7 +102,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4820123757619348
 Transform:
   m_ObjectHideFlags: 0
@@ -180,7 +180,7 @@ MeshCollider:
   m_GameObject: {fileID: 1345368308290578}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -202,9 +202,15 @@ MonoBehaviour:
   hitEffect: {fileID: 166404, guid: 78e1c8c5b281b8b439229473779ac9aa, type: 3}
   ammoSlot: {fileID: 0}
   ammoType: 1
-  range: 50
+  range: 10
   damage: 60
   timeBetweenShots: 1
+  ammoTypeTextUI: {fileID: 0}
+  ammoAmmountTextUI: {fileID: 0}
+  audioSource: {fileID: 0}
+  shootAudio: {fileID: 0}
+  emptyAudio: {fileID: 0}
+  hitAudio: {fileID: 0}
   canShoot: 1
 --- !u!95 &7628748685873782033
 Animator:

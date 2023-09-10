@@ -33,10 +33,10 @@ public class Weapon : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Mouse0) && canShoot) {
             if(ammoSlot.GetAmmoCount(ammoType) > 0) {
                 StartCoroutine(Shoot());
+                // ShootWithoutWait();
             } else {
                 audioSource.pitch = Random.Range(0.9f, 1f);
                 audioSource.PlayOneShot(emptyAudio);
-                Debug.Log("No more ammos to shoot. GLHF.");
             }
         }
     }
@@ -50,6 +50,17 @@ public class Weapon : MonoBehaviour
     // 1) Setup a WaitUntil() Coroutine, with a bool assigned named "isSwitching"
     // 2) When switching, if the counter is lower than the initial counter but higher than 0, isSwitching goes to true
     // 3) When switching back on it, isSwitching goes back to false, counter takes the remaining counter and finishes the Coroutine
+
+    void ShootWithoutWait() {
+        canShoot = false;
+        audioSource.pitch = Random.Range(0.9f, 1f);
+        audioSource.PlayOneShot(shootAudio);
+        ammoSlot.ReduceAmmo(ammoType);
+        muzzleFlash.Play();
+        anim.SetTrigger("isShooting");
+        RaycastHandle();
+        canShoot = true;
+    }
 
     IEnumerator Shoot() {
         canShoot = false;

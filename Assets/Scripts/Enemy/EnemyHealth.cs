@@ -45,6 +45,5 @@ public class EnemyHealth : MonoBehaviour
         audioSource.PlayOneShot(deathSound);
 
         isDead = true;
-        Debug.Log("Enemy has been killed.");
     }
 }

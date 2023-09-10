@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
 
     void Start() {
         settingsButtons.SetActive(false);
-        cursorHandler = FindObjectOfType<CursorHandler>();
+        cursorHandler = GetComponent<CursorHandler>();
     }
 
     void Update() {

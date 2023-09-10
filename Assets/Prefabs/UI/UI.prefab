@@ -2393,7 +2393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8326325857307830617
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3291,7 +3291,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8326325858221168304
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3463,7 +3463,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8326325858434270138
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3990,7 +3990,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MAIN MENU
+  m_text: QUIT GAME
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7da506ef93e54d84f8d22ce41bc01569, type: 2}
   m_sharedMaterial: {fileID: 5287461612068343926, guid: 7da506ef93e54d84f8d22ce41bc01569, type: 2}
@@ -4071,7 +4071,7 @@ GameObject:
   - component: {fileID: 8326325858706013125}
   - component: {fileID: 8326325858706013124}
   m_Layer: 0
-  m_Name: HealthBarBackground
+  m_Name: HealthBarImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4182,7 +4182,7 @@ GameObject:
   - component: {fileID: 8326325858891441900}
   - component: {fileID: 8326325858891441903}
   m_Layer: 0
-  m_Name: HealthBarImage
+  m_Name: HealthBarImageBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

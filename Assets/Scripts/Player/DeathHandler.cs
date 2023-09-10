@@ -10,8 +10,13 @@ public class DeathHandler : MonoBehaviour
         gameOverCanvas.enabled = false;
     }   
 
+    void Update() {
+        Debug.Log("Time scale on update : " + Time.timeScale.ToString());
+    }
+
     public void HandleDeath() {
         gameOverCanvas.enabled = true;
-        GetComponent<CursorHandler>().SetCursorInMenuState(false);
+        Time.timeScale = 0;
+        FindObjectOfType<CursorHandler>().SetCursorInMenuState(false);
     }
 }

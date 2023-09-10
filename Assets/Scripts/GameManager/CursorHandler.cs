@@ -8,7 +8,7 @@ public class CursorHandler : MonoBehaviour
     Weapon weapon;
 
     void Start() {
-        starterAssetsInputs = GetComponent<StarterAssets.StarterAssetsInputs>();
+        starterAssetsInputs = FindObjectOfType<StarterAssets.StarterAssetsInputs>();
         weapon = FindObjectOfType<Weapon>();
 
     }

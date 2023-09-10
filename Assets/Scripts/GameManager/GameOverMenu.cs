@@ -9,13 +9,11 @@ public class GameOverMenu : MonoBehaviour
     CursorHandler cursorHandler;
 
     private void Start() {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        cursorHandler = player.GetComponent<CursorHandler>();
+        cursorHandler = GetComponent<CursorHandler>();
     }   
 
     public void ReloadLevel() {
         cursorHandler.SetCursorInMenuState(true);
-        Debug.Log("reloading level");
         SceneManager.LoadScene(1);
         Time.timeScale = 1.0f;
     }

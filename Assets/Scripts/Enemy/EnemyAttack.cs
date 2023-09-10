@@ -20,6 +20,5 @@ public class EnemyAttack : MonoBehaviour
         // audioSource.pitch = Random.Range(audioSource.pitch, audioSource.pitch - 0.3f);
         audioSource.PlayOneShot(attackSound);
         target.DecreaseHealth(attackDamage);
-        Debug.Log("MANGER MANGER.");
     }
 }
