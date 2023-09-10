@@ -315,6 +315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c50e4194e10b094c9c3e19e11be9664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  volumeType: SFX
 --- !u!1001 &6029851909666423615
 PrefabInstance:
   m_ObjectHideFlags: 0

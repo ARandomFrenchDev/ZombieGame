@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class VolumeSetter : MonoBehaviour
 {
-    VolumeSettings volumeSettings;
+    [SerializeField] string volumeType;
     AudioSource audioSource;
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        volumeSettings = FindObjectOfType<VolumeSettings>();
+        if(volumeType == "SFX") {
+            audioSource.volume = PlayerPrefs.GetFloat("sfxVolume");
+        } else if(volumeType == "MUSIC") {
+            audioSource.volume = PlayerPrefs.GetFloat("musicVolume");
+        }
     }
     void Update()
     {
-        audioSource.volume = volumeSettings.sfxVolume;
+        if(volumeType == "SFX") {
+            audioSource.volume = PlayerPrefs.GetFloat("sfxVolume");
+        } else if(volumeType == "MUSIC") {
+            audioSource.volume = PlayerPrefs.GetFloat("musicVolume");
+        }
     }
 }

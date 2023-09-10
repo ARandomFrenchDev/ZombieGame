@@ -8,28 +8,22 @@ public class VolumeSettings : MonoBehaviour
 {
     [SerializeField] Slider sfxVolumeSlider;
     [SerializeField] Slider musicVolumeSlider;
-    [SerializeField] Canvas settingsCanvas;
-    public float musicVolume = 1f; 
-    public float sfxVolume = 1f; 
-    CursorHandler cursorHandler;
 
     void Start() {
-        musicVolumeSlider.value = musicVolume;
-        sfxVolumeSlider.value = sfxVolume;
-        settingsCanvas.enabled = false;
-        cursorHandler = FindObjectOfType<CursorHandler>();
+        sfxVolumeSlider.value = PlayerPrefs.GetFloat("sfxVolume");
+        musicVolumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+        Debug.Log(PlayerPrefs.GetFloat("musicVolume"));
+        // settingsCanvas.enabled = false;
     }
 
-    void Update() {
-        if(Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name != "Main Menu") {
-            cursorHandler.SetCursorInMenuState(settingsCanvas.enabled);
-            settingsCanvas.enabled = !settingsCanvas.enabled;
-        }
-    }
     public void ChangeSFXVolume() {
-        sfxVolume = sfxVolumeSlider.value;
+        PlayerPrefs.SetFloat("sfxVolume", sfxVolumeSlider.value);
+        Debug.Log(PlayerPrefs.GetFloat("sfxVolume"));
+        PlayerPrefs.Save();
     }
     public void ChangeMusicVolume() {
-        musicVolume = musicVolumeSlider.value;
+        PlayerPrefs.SetFloat("musicVolume", musicVolumeSlider.value);
+        Debug.Log(PlayerPrefs.GetFloat("musicVolume"));
+        PlayerPrefs.Save();
     }
  }

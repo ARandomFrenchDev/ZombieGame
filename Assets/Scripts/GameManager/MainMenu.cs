@@ -5,10 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] Canvas mainMenuSettings;
+    [SerializeField] Canvas mainMenuCanvas;
+    [SerializeField] GameObject settingsButtons;
+    [SerializeField] GameObject mainButtons;
+    CursorHandler cursorHandler;
 
     void Start() {
-        mainMenuSettings.enabled = false;
+        settingsButtons.SetActive(false);
+        cursorHandler = FindObjectOfType<CursorHandler>();
+    }
+
+    void Update() {
+        if(SceneManager.GetActiveScene().name != "Main Menu") {
+            mainMenuCanvas.enabled = false;
+            cursorHandler.SetCursorInMenuState(true);
+        }
+        
+        if(Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name != "Main Menu" && mainMenuCanvas.enabled == false) {
+            cursorHandler.SetCursorInMenuState(false);
+            mainMenuCanvas.enabled = true;
+        }
+    }
+
+    public void GoBackToGameClick() {
+        cursorHandler.SetCursorInMenuState(true);
+        mainMenuCanvas.enabled = false;
     }
 
     public void PlayButtonClick() {
@@ -16,8 +37,13 @@ public class MainMenu : MonoBehaviour
     }
 
     public void SettingsButtonClick() {
-        mainMenuSettings.enabled = true;
-        enabled = false;
+        settingsButtons.SetActive(true);
+        mainButtons.SetActive(false);
+    }
+
+    public void MainMenuButtonClick() {
+        settingsButtons.SetActive(false);
+        mainButtons.SetActive(true);
     }
 
     public void QuitGameButtonClick() {
