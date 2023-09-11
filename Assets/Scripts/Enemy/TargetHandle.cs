@@ -7,8 +7,8 @@ public class TargetHandle : MonoBehaviour
     [SerializeField] float points;
     
     public void HandlePoints() {
-        Debug.Log("points");
-        Destroy(gameObject);
+        Debug.Log(points);
+        Destroy(gameObject.transform.parent.gameObject);
     }
 
 }

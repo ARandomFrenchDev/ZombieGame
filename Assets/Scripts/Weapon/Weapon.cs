@@ -75,9 +75,11 @@ public class Weapon : MonoBehaviour
                 audioSourceEnnemy.pitch = Random.Range(0.5f, 1f);
                 audioSourceEnnemy.PlayOneShot(hitAudio);
                 ParticleBulletHitEffect(hit);
+                DamageBulletHandle(hit);
+            } else if(hit.transform.tag == "Target") {
+                TargetHandle targetHandle = hit.transform.GetComponent<TargetHandle>();
+                targetHandle.HandlePoints();
             }
-
-            DamageBulletHandle(hit);
 
         }
     }

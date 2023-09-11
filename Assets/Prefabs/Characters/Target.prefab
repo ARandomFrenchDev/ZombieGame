@@ -580,7 +580,7 @@ GameObject:
   - component: {fileID: 2999855640666155257}
   m_Layer: 0
   m_Name: Target_Torso_Collider
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1593,7 +1593,7 @@ GameObject:
   - component: {fileID: 6793004335319996925}
   m_Layer: 0
   m_Name: Target_Head_Collider
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
