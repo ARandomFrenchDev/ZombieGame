@@ -32,6 +32,8 @@ public class MainMenu : MonoBehaviour
 
     public void GoBackToGameClick() {
         menuCanvas.enabled = false;
+        GetComponent<CursorHandler>().SetCursorInMenuState(true);
+        Time.timeScale = 1;
     }
 
     public void GoBackToMainMenuClick() {
@@ -40,11 +42,16 @@ public class MainMenu : MonoBehaviour
 
     public void PlayButtonClick() {
         SceneManager.LoadScene(1);
+        Time.timeScale = 1;
     }
 
     public void MenuToSettingsButtonClick() {
         settingsButtons.SetActive(true);
-        mainButtons.SetActive(false);
+        if(SceneManager.GetActiveScene().buildIndex != 0) {
+            pauseButtons.SetActive(false);
+        } else {
+            mainButtons.SetActive(false);
+        }
     }
 
     public void SettingsToMenuButtonClick() {

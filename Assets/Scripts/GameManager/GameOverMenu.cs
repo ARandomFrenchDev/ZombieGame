@@ -14,8 +14,8 @@ public class GameOverMenu : MonoBehaviour
 
     public void ReloadLevel() {
         cursorHandler.SetCursorInMenuState(true);
-        SceneManager.LoadScene(1);
         Time.timeScale = 1.0f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void QuitLevel() {

@@ -9,11 +9,6 @@ public class DeathHandler : MonoBehaviour
     [SerializeField] GameObject mainButtons;
     [SerializeField] GameObject pauseButtons;
     [SerializeField] GameObject gameOverButtons;
-
-    void Update() {
-        Debug.Log("Time scale on update : " + Time.timeScale.ToString());
-    }
-
     public void HandleDeath() {
         menuCanvas.enabled = true;
         settingsButtons.SetActive(false);
