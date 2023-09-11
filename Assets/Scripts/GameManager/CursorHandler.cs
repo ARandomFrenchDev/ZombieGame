@@ -14,7 +14,7 @@ public class CursorHandler : MonoBehaviour
     }
 
     public void SetCursorInMenuState(bool state) {
-        Time.timeScale = state ? 1 : 0;
+        // Time.timeScale = state ? 1 : 0;
         weapon.canShoot = state;
         starterAssetsInputs.cursorLocked = state;
         starterAssetsInputs.cursorInputForLook = state;

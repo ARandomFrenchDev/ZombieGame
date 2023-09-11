@@ -7899,11 +7899,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b948f78a511a944e8be1e6cc439779a, type: 3}
---- !u!223 &1794043475 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 8326325858434270137, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
-  m_PrefabInstance: {fileID: 8326325857005153770}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1837689588 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4435524594210850, guid: 78fe84c1532f5ae4e8bcf4e0d541629d, type: 3}
@@ -9795,9 +9790,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2057508398}
     - target: {fileID: 3750331121476236423, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: menuCanvas
+      value: 
+      objectReference: {fileID: 8326325857005153774}
+    - target: {fileID: 3750331121476236423, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: mainButtons
+      value: 
+      objectReference: {fileID: 8326325857005153772}
+    - target: {fileID: 3750331121476236423, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: pauseButtons
+      value: 
+      objectReference: {fileID: 8326325857005153771}
+    - target: {fileID: 3750331121476236423, guid: aebf99355e977334b91716908f390a78, type: 3}
       propertyPath: gameOverCanvas
       value: 
-      objectReference: {fileID: 1794043475}
+      objectReference: {fileID: 0}
+    - target: {fileID: 3750331121476236423, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: gameOverButtons
+      value: 
+      objectReference: {fileID: 8326325857005153775}
+    - target: {fileID: 3750331121476236423, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: settingsButtons
+      value: 
+      objectReference: {fileID: 8326325857005153773}
     - target: {fileID: 4631027428467422258, guid: aebf99355e977334b91716908f390a78, type: 3}
       propertyPath: ammoTypeTextUI
       value: 
@@ -10251,3 +10266,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
+--- !u!1 &8326325857005153771 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3745918613809423373, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
+  m_PrefabInstance: {fileID: 8326325857005153770}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8326325857005153772 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 426577392, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
+  m_PrefabInstance: {fileID: 8326325857005153770}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8326325857005153773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1361851696, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
+  m_PrefabInstance: {fileID: 8326325857005153770}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &8326325857005153774 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 1634525282, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
+  m_PrefabInstance: {fileID: 8326325857005153770}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8326325857005153775 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2408786001488205035, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
+  m_PrefabInstance: {fileID: 8326325857005153770}
+  m_PrefabAsset: {fileID: 0}
