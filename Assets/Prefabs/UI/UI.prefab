@@ -333,8 +333,9 @@ RectTransform:
   - {fileID: 1875090274}
   - {fileID: 2128601593}
   - {fileID: 759482070}
+  - {fileID: 1926172819}
   m_Father: {fileID: 1634525279}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -537,7 +538,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1510602705537123059}
+      - m_Target: {fileID: 5941506092281675730, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: SettingsToMenuButtonClick
         m_Mode: 1
@@ -789,7 +790,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1509833471}
+      - m_Target: {fileID: 5080840379439400926, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
         m_TargetAssemblyTypeName: VolumeSettings, Assembly-CSharp
         m_MethodName: ChangeSFXVolume
         m_Mode: 1
@@ -1001,7 +1002,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1510602705537123059}
+      - m_Target: {fileID: 5941506092281675730, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: QuitGameButtonClick
         m_Mode: 1
@@ -1271,7 +1272,7 @@ RectTransform:
   - {fileID: 1454332753}
   - {fileID: 523498986}
   m_Father: {fileID: 1634525279}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1405,7 +1406,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1509833471}
+      - m_Target: {fileID: 5080840379439400926, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
         m_TargetAssemblyTypeName: VolumeSettings, Assembly-CSharp
         m_MethodName: ChangeMusicVolume
         m_Mode: 1
@@ -1484,13 +1485,12 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 2087721624}
-  - {fileID: 1926172819}
   - {fileID: 426577393}
   - {fileID: 1361851697}
   - {fileID: 4553004701382196038}
   - {fileID: 837448689918669950}
   m_Father: {fileID: 8326325858881833416}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1813,7 +1813,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1510602705537123059}
+      - m_Target: {fileID: 5941506092281675730, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: PlayButtonClick
         m_Mode: 1
@@ -1854,12 +1854,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1634525279}
-  m_RootOrder: 1
+  m_Father: {fileID: 426577393}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 33, y: -23}
+  m_AnchoredPosition: {x: 33, y: 511.00006}
   m_SizeDelta: {x: 474.3225, y: 46.8827}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &1926172821
@@ -2365,7 +2365,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1510602705537123059}
+      - m_Target: {fileID: 5941506092281675730, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: MenuToSettingsButtonClick
         m_Mode: 1
@@ -2565,7 +2565,7 @@ RectTransform:
   - {fileID: 155951822622793060}
   - {fileID: 7843791533939196549}
   m_Father: {fileID: 1634525279}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2693,9 +2693,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1510602705537123059}
+      - m_Target: {fileID: 5941506092281675730, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: QuitGameButtonClick
+        m_MethodName: GoBackToMainMenuClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2815,7 +2815,7 @@ RectTransform:
   - {fileID: 1960328329249164514}
   - {fileID: 4262404514022681841}
   m_Father: {fileID: 1634525279}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3022,7 +3022,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1510602705537123059}
+      - m_Target: {fileID: 5941506092281675730, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: PlayButtonClick
         m_Mode: 1
@@ -3234,7 +3234,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1510602705537123059}
+      - m_Target: {fileID: 5941506092281675730, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: MenuToSettingsButtonClick
         m_Mode: 1
@@ -3279,7 +3279,7 @@ RectTransform:
   - {fileID: 8326325857665260929}
   - {fileID: 8326325858447947336}
   m_Father: {fileID: 8326325858881833416}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3647,7 +3647,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8326325858881833416}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8326325857664074602
 MonoBehaviour:
@@ -3908,7 +3908,7 @@ RectTransform:
   m_Children:
   - {fileID: 8326325857679442919}
   m_Father: {fileID: 8326325858881833416}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4013,82 +4013,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &8326325858623375466
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8326325858623375464}
-  - component: {fileID: 8326325858623375467}
-  - component: {fileID: 1509833471}
-  - component: {fileID: 1510602705537123059}
-  m_Layer: 0
-  m_Name: Game Session
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8326325858623375464
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8326325858623375466}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1040.5471, y: 440.65063, z: -1051.1107}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 8326325858881833416}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8326325858623375467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8326325858623375466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 432eb04a95598dd4cb081fc57b6b9bb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1509833471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8326325858623375466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec489253ef2cc0e40a315bab3bcfe049, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sfxVolumeSlider: {fileID: 666274028}
-  musicVolumeSlider: {fileID: 1491071370}
---- !u!114 &1510602705537123059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8326325858623375466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 763c779b7007e3d4187a292e6a4f0cb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuCanvas: {fileID: 1634525282}
-  settingsButtons: {fileID: 1361851696}
-  mainButtons: {fileID: 426577392}
-  pauseButtons: {fileID: 3745918613809423373}
-  gameOverButtons: {fileID: 2408786001488205035}
 --- !u!1 &8326325858706013126
 GameObject:
   m_ObjectHideFlags: 0
@@ -4191,7 +4115,6 @@ Transform:
   m_LocalPosition: {x: -2.5304651, y: -3.6546283, z: 9.300446}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8326325858623375464}
   - {fileID: 8326325857664074603}
   - {fileID: 8326325858221168304}
   - {fileID: 8326325857307830617}
@@ -4395,7 +4318,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1510602705537123059}
+      - m_Target: {fileID: 5941506092281675730, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: GoBackToMainMenuClick
         m_Mode: 1
@@ -4528,9 +4451,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1510602705537123059}
+      - m_Target: {fileID: 5941506092281675730, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: PlayButtonClick
+        m_MethodName: GoBackToGameClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

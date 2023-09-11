@@ -6,25 +6,18 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] Canvas menuCanvas;
-    [SerializeField] GameObject settingsButtons;
     [SerializeField] GameObject mainButtons;
+    [SerializeField] GameObject settingsButtons;
     [SerializeField] GameObject pauseButtons;
     [SerializeField] GameObject gameOverButtons;
-    CursorHandler cursorHandler;
 
     void Start() {
         settingsButtons.SetActive(false);
         pauseButtons.SetActive(false);
         gameOverButtons.SetActive(false);
-        cursorHandler = GetComponent<CursorHandler>();
     }
 
     void Update() {
-        if(SceneManager.GetActiveScene().buildIndex != 0) {
-            menuCanvas.enabled = false;
-            cursorHandler.SetCursorInMenuState(true);
-        }
-        
         if(Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().buildIndex != 0 && menuCanvas.enabled == false) {
             menuCanvas.enabled = true;
             pauseButtons.SetActive(true);
@@ -33,12 +26,11 @@ public class MainMenu : MonoBehaviour
             gameOverButtons.SetActive(false);
             
             Time.timeScale = 0;
-            // cursorHandler.SetCursorInMenuState(false);
+            GetComponent<CursorHandler>().SetCursorInMenuState(false);
         }
     }
 
     public void GoBackToGameClick() {
-        cursorHandler.SetCursorInMenuState(true);
         menuCanvas.enabled = false;
     }
 

@@ -10,10 +10,6 @@ public class DeathHandler : MonoBehaviour
     [SerializeField] GameObject pauseButtons;
     [SerializeField] GameObject gameOverButtons;
 
-    private void Start() {
-        menuCanvas.enabled = false;
-    }   
-
     void Update() {
         Debug.Log("Time scale on update : " + Time.timeScale.ToString());
     }
@@ -25,6 +21,6 @@ public class DeathHandler : MonoBehaviour
         settingsButtons.SetActive(false);
         gameOverButtons.SetActive(true);
         Time.timeScale = 0;
-        // FindObjectOfType<CursorHandler>().SetCursorInMenuState(false);
+        FindObjectOfType<CursorHandler>().SetCursorInMenuState(false);
     }
 }
