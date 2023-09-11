@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CursorHandler : MonoBehaviour
 {
@@ -15,7 +16,9 @@ public class CursorHandler : MonoBehaviour
 
     public void SetCursorInMenuState(bool state) {
         // Time.timeScale = state ? 1 : 0;
-        weapon.canShoot = state;
+        if(SceneManager.GetActiveScene().buildIndex > 0) {
+            weapon.canShoot = state;
+        }
         starterAssetsInputs.cursorLocked = state;
         starterAssetsInputs.cursorInputForLook = state;
         starterAssetsInputs.SetCursorState(starterAssetsInputs.cursorLocked);

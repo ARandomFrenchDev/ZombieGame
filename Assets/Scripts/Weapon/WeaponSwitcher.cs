@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class WeaponSwitcher : MonoBehaviour
 {
     [SerializeField] int currentWeapon = 0;
+    [SerializeField] Canvas menuCanvas;
 
     void Start() {
         SetWeaponActive();
@@ -13,8 +14,10 @@ public class WeaponSwitcher : MonoBehaviour
 
     void Update() {
         int previousWeapon = currentWeapon;
-        ProcessKeyInput();
-        ProcessScrollWheel();
+        if(menuCanvas.enabled == false) {
+            ProcessKeyInput();
+            ProcessScrollWheel();
+        }
 
         if(previousWeapon != currentWeapon) {
             SetWeaponActive();
