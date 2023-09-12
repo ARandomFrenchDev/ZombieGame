@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 97cd607220553744eaee11aa438829b0, type: 2}
+--- !u!114 &16854551 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 566975856156188075, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
+  m_PrefabInstance: {fileID: 8326325857005153770}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &29821267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1942,6 +1953,10 @@ PrefabInstance:
       propertyPath: settingsButtons
       value: 
       objectReference: {fileID: 8326325857005153773}
+    - target: {fileID: 8284784475333332816, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
+      propertyPath: taskText
+      value: 
+      objectReference: {fileID: 16854551}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
 --- !u!114 &1548954555 stripped
@@ -4109,6 +4124,10 @@ PrefabInstance:
     - target: {fileID: 1634525278, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 303647690241677539, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
+      propertyPath: m_text
+      value: LA TACHE EST SIMPLE...
       objectReference: {fileID: 0}
     - target: {fileID: 423529148934602500, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

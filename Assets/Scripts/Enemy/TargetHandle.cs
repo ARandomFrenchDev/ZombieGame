@@ -15,7 +15,7 @@ public class TargetHandle : MonoBehaviour
 
     IEnumerator CoroutineExecution() {
         audioSource.PlayOneShot(shotSFX);
-        fireworksEffect.Play();
+        Instantiate(fireworksEffect, transform.position, transform.rotation);
         yield return new WaitUntil(() => !audioSource.isPlaying);
         Destroy(gameObject.transform.parent.gameObject);
 
