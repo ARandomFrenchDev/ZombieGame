@@ -10,13 +10,12 @@ public class CursorHandler : MonoBehaviour
 
     void Start() {
         starterAssetsInputs = FindObjectOfType<StarterAssets.StarterAssetsInputs>();
-        weapon = FindObjectOfType<Weapon>();
-
     }
 
     public void SetCursorInMenuState(bool state) {
         // Time.timeScale = state ? 1 : 0;
         if(SceneManager.GetActiveScene().buildIndex > 0) {
+            weapon = FindObjectOfType<Weapon>();
             weapon.canShoot = state;
         }
         starterAssetsInputs.cursorLocked = state;

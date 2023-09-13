@@ -5,13 +5,17 @@ using UnityEngine.InputSystem;
 
 public class WeaponSwitcher : MonoBehaviour
 {
-    [SerializeField] int currentWeapon = 0;
     [SerializeField] Canvas menuCanvas;
+    public int currentWeapon;
 
     TaskHandler taskHandler;
-    void Start() {
-        SetWeaponActive();
+
+    void Awake() {
         taskHandler = FindObjectOfType<TaskHandler>();
+    }
+    void Start() {
+        currentWeapon = taskHandler.activeWeaponScene;
+        SetWeaponActive();
     }
 
     void Update() {
