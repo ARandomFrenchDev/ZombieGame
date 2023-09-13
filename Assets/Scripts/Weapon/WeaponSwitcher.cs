@@ -8,16 +8,18 @@ public class WeaponSwitcher : MonoBehaviour
     [SerializeField] int currentWeapon = 0;
     [SerializeField] Canvas menuCanvas;
 
+    TaskHandler taskHandler;
     void Start() {
         SetWeaponActive();
+        taskHandler = FindObjectOfType<TaskHandler>();
     }
 
     void Update() {
         int previousWeapon = currentWeapon;
-        if(menuCanvas.enabled == false) {
+        if(menuCanvas.enabled == false && taskHandler.canSwitchWeapon == true) {
             ProcessKeyInput();
             ProcessScrollWheel();
-        }
+        } 
 
         if(previousWeapon != currentWeapon) {
             SetWeaponActive();
