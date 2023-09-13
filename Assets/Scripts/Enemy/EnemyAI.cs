@@ -20,6 +20,7 @@ public class EnemyAI : MonoBehaviour
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         enemyAnimation = GetComponent<Animator>();
+        enemyAnimation.Rebind();
         audioSource = GetComponent<AudioSource>();
         audioSource.pitch = Random.Range(0.5f, 1f);
     }

@@ -8,6 +8,7 @@ public class EnemyHealth : MonoBehaviour
 
     [SerializeField] float hitPoints = 100f;
     [SerializeField] AudioClip deathSound;
+    [SerializeField] AmmoPickup ammoPickup;
 
     bool isDead = false;
     AudioSource audioSource;
@@ -39,11 +40,11 @@ public class EnemyHealth : MonoBehaviour
 
     void EnemyDeath() {
         if(isDead) return;
+        isDead = true;
         GetComponent<Animator>().SetTrigger("isDead");
-        // audioSource.Stop();
         audioSource.pitch = Random.Range(0.8f, 1f);
         audioSource.PlayOneShot(deathSound);
-
-        isDead = true;
+        Vector3 pickupPos = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
+        Instantiate(ammoPickup, pickupPos, transform.rotation);
     }
 }

@@ -166,6 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitPoints: 100
   deathSound: {fileID: 8300000, guid: d405d90ab3aed45498fe62fd7745ce69, type: 3}
+  ammoPickup: {fileID: 0}
 --- !u!114 &7482357574613543475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -371,10 +372,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 95230680386924674, guid: b6dd7aa0471525a4ba150a6dd06fc4b4, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: c2029b34b1e0c8b4aaaee0b72ec59edc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6dd7aa0471525a4ba150a6dd06fc4b4, type: 3}
 --- !u!4 &6034352606914645001 stripped

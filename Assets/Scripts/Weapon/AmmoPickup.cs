@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class AmmoPickup : MonoBehaviour
 {
-    [SerializeField] AmmoType pickUpAmmoType;
-    [SerializeField] int ammoAmount;
+    [SerializeField] public AmmoType pickUpAmmoType;
+    [SerializeField] public int ammoAmount;
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip reloadSound;
+
+    void Awake() {
+        audioSource = FindObjectOfType<WeaponSway>().GetComponent<AudioSource>();
+    }
 
     void Update() {
         transform.Rotate(0, 0.1f, 0);

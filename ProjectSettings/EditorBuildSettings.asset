@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 1 - Forest.unity
     guid: 7ab691fdaf7cfbd49a8e948627e85663
+  - enabled: 1
+    path: Assets/Scenes/Level 2 - Forest By Night.unity
+    guid: a8939e16b9e99dd41b99164e214f657c
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
