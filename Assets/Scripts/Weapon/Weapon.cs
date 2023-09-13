@@ -19,6 +19,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] AudioClip shootAudio;
     [SerializeField] AudioClip emptyAudio;
     [SerializeField] AudioClip hitAudio;
+    [SerializeField] AudioClip screamAudio;
 
     [SerializeField] public bool canShoot = true;
     Animator anim;
@@ -79,6 +80,9 @@ public class Weapon : MonoBehaviour
             } else if(hit.transform.tag == "Target") {
                 TargetHandle targetHandle = hit.transform.GetComponent<TargetHandle>();
                 targetHandle.HandlePoints();
+            } else if(hit.transform.tag == "Radio") {
+                AudioSource targetAudio = hit.transform.GetComponent<AudioSource>();
+                targetAudio.pitch = Random.Range(0f, 1f);
             }
 
         }

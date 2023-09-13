@@ -7,6 +7,7 @@ TagManager:
   - CinemachineTarget
   - Enemy
   - Target
+  - Radio
   layers:
   - Default
   - TransparentFX

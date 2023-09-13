@@ -157,8 +157,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a83da85a40bc064aa749d918df9d1ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentWeapon: 1
   menuCanvas: {fileID: 0}
+  currentWeapon: 1
 --- !u!1001 &1304220144715152594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -214,6 +214,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 90522470312405117, guid: 68317e2c4c57a6e45be7063240f91cbb, type: 3}
+      propertyPath: screamAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: a73db828faa312348b02b785c00ef97f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68317e2c4c57a6e45be7063240f91cbb, type: 3}
 --- !u!4 &1303275998690460666 stripped
@@ -228,6 +232,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 876198913199966180}
     m_Modifications:
+    - target: {fileID: -3029296398920355656, guid: 9ec98e8c57546a746a43196444d9c97f, type: 3}
+      propertyPath: screamAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: a73db828faa312348b02b785c00ef97f, type: 3}
     - target: {fileID: 1345368308290578, guid: 9ec98e8c57546a746a43196444d9c97f, type: 3}
       propertyPath: m_Name
       value: Shotgun
@@ -290,6 +298,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 876198913199966180}
     m_Modifications:
+    - target: {fileID: 1032833917, guid: be20da268d490c44c8460e91a7cd3a44, type: 3}
+      propertyPath: screamAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: a73db828faa312348b02b785c00ef97f, type: 3}
     - target: {fileID: 1296539039355890, guid: be20da268d490c44c8460e91a7cd3a44, type: 3}
       propertyPath: m_Name
       value: AssaultRifle
