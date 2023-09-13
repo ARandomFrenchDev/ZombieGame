@@ -628,6 +628,7 @@ MonoBehaviour:
   audioSource: {fileID: 7868062386126828076}
   shotSFX: {fileID: 8300000, guid: 978b80398d76df745a7b551a51ecaca4, type: 3}
   fireworksEffect: {fileID: 2929278818784948125, guid: f68c18cba716ffe40bb5ca49856cf8b5, type: 3}
+  components: {fileID: 6139692164926219078}
 --- !u!1 &3964777920486697347
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,7 +1139,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6139692164926219078}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.006981222, w: 0.9999757}
   m_LocalPosition: {x: -0.20861816, y: 0.40434647, z: 0.037399292}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1164,7 +1165,7 @@ Transform:
   - {fileID: 5944199910346806112}
   m_Father: {fileID: 8450794855059242280}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.8}
 --- !u!65 &3375014512872703070
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1644,6 +1645,7 @@ MonoBehaviour:
   audioSource: {fileID: 7868062386126828076}
   shotSFX: {fileID: 8300000, guid: 4553cdb428738fe488fdf6870cfa7a87, type: 3}
   fireworksEffect: {fileID: 2929278818784948125, guid: f68c18cba716ffe40bb5ca49856cf8b5, type: 3}
+  components: {fileID: 6139692164926219078}
 --- !u!1 &9056785527795458758
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,8 +1751,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9082794569974769554}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 108.94125, y: 57.992226, z: 153.6864}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5133609251840237629}
