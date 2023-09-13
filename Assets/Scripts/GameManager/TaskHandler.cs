@@ -8,6 +8,7 @@ public class TaskHandler : MonoBehaviour
 {
     [SerializeField] TMP_Text taskText;
     [SerializeField] float gettingOutTimer = 60f;
+    public float taskScorePointsTotal = 0f;
 
     void Update() {
         HandleTask();
@@ -17,7 +18,7 @@ public class TaskHandler : MonoBehaviour
         int currentScene = SceneManager.GetActiveScene().buildIndex;
 
         if(currentScene == 1) {
-            taskText.text = "Détruis les cibles :)";
+            taskText.text = "DÉTRUIS LES CIBLES :)";
         } else if(currentScene == 2) {
             taskText.text = "SURVIS.";
         } else if(currentScene == 3) {
