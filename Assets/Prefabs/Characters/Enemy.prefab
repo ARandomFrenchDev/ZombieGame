@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 7482357574613543475}
   - component: {fileID: 3543445105005134546}
   - component: {fileID: 4539991831898396154}
+  - component: {fileID: 5854857491687372536}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -317,6 +318,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volumeType: SFX
+--- !u!114 &5854857491687372536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8468623929308174580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 019b704a72e00cd4d8cd6694733eda4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 3543445105005134546}
+  metalClip: {fileID: 8300000, guid: 7376d7a7a4bcd334ca837506d62b12aa, type: 3}
+  grassClip: {fileID: 8300000, guid: 9b29fe2736940184db7beb414f705bf6, type: 3}
+  brickClip: {fileID: 8300000, guid: 2fa763e8fe74fe143a8e3a3ea921b907, type: 3}
+  woodClip: {fileID: 8300000, guid: 0ec3715722af73f48a6cddde6d8658a5, type: 3}
 --- !u!1001 &6029851909666423615
 PrefabInstance:
   m_ObjectHideFlags: 0

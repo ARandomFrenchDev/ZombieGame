@@ -186,9 +186,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.26666668
-    functionName: HandleFootsteps
+    functionName: FootstepsCases
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 11500000, guid: 019b704a72e00cd4d8cd6694733eda4f, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
