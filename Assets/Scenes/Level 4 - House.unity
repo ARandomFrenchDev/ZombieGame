@@ -1165,6 +1165,10 @@ PrefabInstance:
       propertyPath: settingsButtons
       value: 
       objectReference: {fileID: 8326325857005153773}
+    - target: {fileID: 8284784475333332816, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
+      propertyPath: taskText
+      value: 
+      objectReference: {fileID: 8326325857005153778}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
 --- !u!114 &1548954555 stripped
@@ -3168,5 +3172,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8326325857005153778 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 566975856156188075, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
+  m_PrefabInstance: {fileID: 8326325857005153770}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -16,6 +16,6 @@ public class Flashlight : MonoBehaviour
     }
 
     public void ActivateFlashlight() {
-        mainSpotLight.intensity = 3;
+        mainSpotLight.intensity = 60;
     }
  }

@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Target
   - Radio
+  - Grass
+  - Brick
   layers:
   - Default
   - TransparentFX

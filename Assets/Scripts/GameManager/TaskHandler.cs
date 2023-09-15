@@ -31,9 +31,9 @@ public class TaskHandler : MonoBehaviour
         } else if(currentScene == 3) {
             activeWeaponScene = 2;
             canSwitchWeapon = true;
+            taskText.color = Color.red;
             gettingOutTimer = gettingOutTimer - Time.deltaTime;
             taskText.text = gettingOutTimer.ToString();
-            taskText.color = Color.red;
         } else if(currentScene == 4) {
             activeWeaponScene = 0;
             canSwitchWeapon = true;

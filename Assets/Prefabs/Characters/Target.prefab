@@ -629,6 +629,8 @@ MonoBehaviour:
   shotSFX: {fileID: 8300000, guid: 978b80398d76df745a7b551a51ecaca4, type: 3}
   fireworksEffect: {fileID: 2929278818784948125, guid: f68c18cba716ffe40bb5ca49856cf8b5, type: 3}
   components: {fileID: 6139692164926219078}
+  scoreText: {fileID: 0}
+  isCursed: 0
 --- !u!1 &3964777920486697347
 GameObject:
   m_ObjectHideFlags: 0
@@ -1646,6 +1648,8 @@ MonoBehaviour:
   shotSFX: {fileID: 8300000, guid: 4553cdb428738fe488fdf6870cfa7a87, type: 3}
   fireworksEffect: {fileID: 2929278818784948125, guid: f68c18cba716ffe40bb5ca49856cf8b5, type: 3}
   components: {fileID: 6139692164926219078}
+  scoreText: {fileID: 0}
+  isCursed: 0
 --- !u!1 &9056785527795458758
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,6 +1741,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8450794855059242280}
   - component: {fileID: 7868062386126828076}
+  - component: {fileID: 4179929981636000929}
   m_Layer: 0
   m_Name: Target
   m_TagString: Untagged
@@ -1857,6 +1862,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4179929981636000929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9082794569974769554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c50e4194e10b094c9c3e19e11be9664, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeType: SFX
 --- !u!1 &9101314973829088587
 GameObject:
   m_ObjectHideFlags: 0
