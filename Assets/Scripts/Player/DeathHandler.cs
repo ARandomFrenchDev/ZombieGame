@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using StarterAssets;
 using UnityEngine;
 
 public class DeathHandler : MonoBehaviour
@@ -15,6 +16,7 @@ public class DeathHandler : MonoBehaviour
         mainButtons.SetActive(false);
         settingsButtons.SetActive(false);
         gameOverButtons.SetActive(true);
+        GetComponent<FirstPersonController>().RotationSpeed = 0;
         Time.timeScale = 0;
         FindObjectOfType<CursorHandler>().SetCursorInMenuState(false);
     }

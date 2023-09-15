@@ -5193,6 +5193,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Container_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1287357858214794, guid: bb5372a4488a7414abff91d36b3fcdec, type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     - target: {fileID: 4380106908607802, guid: bb5372a4488a7414abff91d36b3fcdec, type: 3}
       propertyPath: m_RootOrder
       value: 31

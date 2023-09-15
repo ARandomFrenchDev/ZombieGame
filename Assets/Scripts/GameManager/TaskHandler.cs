@@ -32,8 +32,7 @@ public class TaskHandler : MonoBehaviour
             activeWeaponScene = 2;
             canSwitchWeapon = true;
             taskText.color = Color.red;
-            gettingOutTimer = gettingOutTimer - Time.deltaTime;
-            taskText.text = gettingOutTimer.ToString();
+            Level3Countdown();
         } else if(currentScene == 4) {
             activeWeaponScene = 0;
             canSwitchWeapon = true;
@@ -51,6 +50,16 @@ public class TaskHandler : MonoBehaviour
             taskText.text = "?";
             canSwitchWeapon = false;
         }
+    }
+
+    private void Level3Countdown(){
+        gettingOutTimer = gettingOutTimer - Time.deltaTime;
+        if(gettingOutTimer < 0.5f) {
+            DeathHandler player = FindObjectOfType<DeathHandler>();
+            player.HandleDeath();
+        }
+        taskText.text = Mathf.Round(gettingOutTimer).ToString();
+
     }
 
 }
