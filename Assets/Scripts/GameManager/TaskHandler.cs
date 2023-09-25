@@ -25,7 +25,7 @@ public class TaskHandler : MonoBehaviour
             activeWeaponScene = 0;
             canSwitchWeapon = false;
         } else if(currentScene == 2) {
-            taskText.text = "SURVIS.";
+            taskText.text = "ENQUETE.";
             activeWeaponScene = 2;
             canSwitchWeapon = false;
         } else if(currentScene == 3) {

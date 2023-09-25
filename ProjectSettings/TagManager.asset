@@ -11,6 +11,7 @@ TagManager:
   - Grass
   - Brick
   - Metal
+  - Wood
   layers:
   - Default
   - TransparentFX

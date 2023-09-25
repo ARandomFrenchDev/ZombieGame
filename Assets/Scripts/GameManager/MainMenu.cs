@@ -28,6 +28,11 @@ public class MainMenu : MonoBehaviour
             Time.timeScale = 0;
             GetComponent<CursorHandler>().SetCursorInMenuState(false);
         }
+
+        if(SceneManager.GetActiveScene().buildIndex != 0) {
+            mainButtons.SetActive(false);
+        }
+
     }
 
     public void GoBackToGameClick() {
