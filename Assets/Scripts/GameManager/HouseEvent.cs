@@ -6,6 +6,7 @@ public class HouseEvent : MonoBehaviour
 {
     [SerializeField] GameObject house;
     [SerializeField] AudioClip keySound;
+    private bool hasBeenActivated = false ;
 
     void Start() {
         house.SetActive(false);
@@ -18,9 +19,10 @@ public class HouseEvent : MonoBehaviour
     /// <param name="other">The Collision data associated with this collision.</param>
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player") {
+        if(other.gameObject.tag == "Player" && !hasBeenActivated) {
             house.SetActive(true);
             other.gameObject.GetComponent<AudioSource>().PlayOneShot(keySound);
+            hasBeenActivated = true;
         }
     }
 }
