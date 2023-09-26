@@ -22,11 +22,11 @@ public class TaskHandler : MonoBehaviour
 
         if(currentScene == 1) {
             taskText.text = "DÉTRUIS LES CIBLES :)";
-            activeWeaponScene = 0;
+            activeWeaponScene = 1;
             canSwitchWeapon = false;
         } else if(currentScene == 2) {
             taskText.text = "ENQUETE.";
-            activeWeaponScene = 2;
+            activeWeaponScene = 3;
             canSwitchWeapon = false;
         } else if(currentScene == 3) {
             activeWeaponScene = 2;
@@ -38,18 +38,14 @@ public class TaskHandler : MonoBehaviour
             canSwitchWeapon = true;
             taskText.text = "Va voir la cabane.";
         } else if(currentScene == 5) {
-            activeWeaponScene = 1;
+            activeWeaponScene = 0;
             canSwitchWeapon = false;
-            taskText.text = "VISITE.";
+            taskText.text = "... sors.";
         } else if(currentScene == 6) {
             activeWeaponScene = 1;
             canSwitchWeapon = true;
-            taskText.text = "LA CABANE LA CABANE LA CABANE LA CABANE LA CABANE";
-        } else if(currentScene == 7) {
-            activeWeaponScene = 0;
-            taskText.text = "?";
-            canSwitchWeapon = false;
-        }
+            taskText.text = "FUIS.";
+        } 
     }
 
     private void Level3Countdown(){
