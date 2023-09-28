@@ -50,7 +50,7 @@ public class TargetHandle : MonoBehaviour
         audioSource.PlayOneShot(shotSFX);
         Instantiate(fireworksEffect, transform.position, transform.rotation);
         if(shootCount <= 0) {
-            SceneManager.LoadScene(2);
+            GetComponent<NextLevel>().HandleNextScene(2);
         }
     }
 

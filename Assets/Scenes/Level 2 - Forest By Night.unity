@@ -2694,6 +2694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToGo: 3
+  transitionCanvas: {fileID: 8326325857005153779}
 --- !u!65 &240255118
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3710,7 +3711,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh102004
+  m_Name: pb_Mesh159264
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4115,7 +4116,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh101770
+  m_Name: pb_Mesh159030
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9720,7 +9721,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh101744
+  m_Name: pb_Mesh159004
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12433,15 +12434,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5247983035759740987, guid: aebf99355e977334b91716908f390a78, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: -42.7
       objectReference: {fileID: 0}
     - target: {fileID: 5247983035759740987, guid: aebf99355e977334b91716908f390a78, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 75.09
+      value: 60.3
       objectReference: {fileID: 0}
     - target: {fileID: 5247983035759740987, guid: aebf99355e977334b91716908f390a78, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 70.5
+      value: -33.5
       objectReference: {fileID: 0}
     - target: {fileID: 5247983035759740987, guid: aebf99355e977334b91716908f390a78, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12470,6 +12471,14 @@ PrefabInstance:
     - target: {fileID: 5247983035759740987, guid: aebf99355e977334b91716908f390a78, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5256582792438516728, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 5589599350171469068, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.375
       objectReference: {fileID: 0}
     - target: {fileID: 8903580982221750772, guid: aebf99355e977334b91716908f390a78, type: 3}
       propertyPath: ammoTypeTextUI
@@ -12885,6 +12894,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!223 &8326325857005153779 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 1793890811, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
+  m_PrefabInstance: {fileID: 8326325857005153770}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9021189315054456775
 PrefabInstance:
   m_ObjectHideFlags: 0

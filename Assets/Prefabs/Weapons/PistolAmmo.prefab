@@ -91,7 +91,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944530625954472}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -112,4 +112,4 @@ MonoBehaviour:
   pickUpAmmoType: 2
   ammoAmount: 10
   audioSource: {fileID: 0}
-  reloadSound: {fileID: 0}
+  reloadSound: {fileID: 8300000, guid: 120a052f1f8cefa43a1195d72c0c2550, type: 3}

@@ -1990,6 +1990,10 @@ PrefabInstance:
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[4].value
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5852827079958307900, guid: 0dea1c0b87636f747b72901c7454c178, type: 3}
+      propertyPath: transitionCanvas
+      value: 
+      objectReference: {fileID: 8326325857005153779}
     - target: {fileID: 8213513473260627051, guid: 0dea1c0b87636f747b72901c7454c178, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -3076,6 +3080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wall: {fileID: 1818663209}
   wallClosing: {fileID: 8300000, guid: 44c63239faa86804883e0c39d0d51b59, type: 3}
+  ambiantMusic: {fileID: 1084664420}
 --- !u!65 &939253909
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3581,10 +3586,14 @@ PrefabInstance:
     - target: {fileID: 895832718510730103, guid: 6950a3cc08bb7834fbef2bd58662a676, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 30bfc91964426894bba92d8bff8e37d8, type: 3}
+      objectReference: {fileID: 8300000, guid: 3218498c96ba40c45b6a300e181ff072, type: 3}
     - target: {fileID: 895832718510730103, guid: 6950a3cc08bb7834fbef2bd58662a676, type: 3}
       propertyPath: rolloffMode
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 895832718510730103, guid: 6950a3cc08bb7834fbef2bd58662a676, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 895832718510730103, guid: 6950a3cc08bb7834fbef2bd58662a676, type: 3}
       propertyPath: rolloffCustomCurve.m_Curve.Array.size
@@ -3707,6 +3716,11 @@ PrefabInstance:
 --- !u!4 &1084664419 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 895832718510730120, guid: 6950a3cc08bb7834fbef2bd58662a676, type: 3}
+  m_PrefabInstance: {fileID: 1084664418}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1084664420 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 895832718510730103, guid: 6950a3cc08bb7834fbef2bd58662a676, type: 3}
   m_PrefabInstance: {fileID: 1084664418}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1114100703
@@ -3913,6 +3927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToGo: 6
+  transitionCanvas: {fileID: 8326325857005153779}
 --- !u!1 &1226701895
 GameObject:
   m_ObjectHideFlags: 0
@@ -7635,3 +7650,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!223 &8326325857005153779 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 1793890811, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
+  m_PrefabInstance: {fileID: 8326325857005153770}
+  m_PrefabAsset: {fileID: 0}

@@ -11,6 +11,12 @@ public class MainMenu : MonoBehaviour
     [SerializeField] GameObject pauseButtons;
     [SerializeField] GameObject gameOverButtons;
 
+    CursorHandler cursorHandler;
+
+    void Awake() {
+        cursorHandler = GetComponent<CursorHandler>();
+    }
+
     void Start() {
         settingsButtons.SetActive(false);
         pauseButtons.SetActive(false);
@@ -26,18 +32,22 @@ public class MainMenu : MonoBehaviour
             gameOverButtons.SetActive(false);
             
             Time.timeScale = 0;
-            GetComponent<CursorHandler>().SetCursorInMenuState(false);
+            cursorHandler.SetCursorInMenuState(false);
         }
 
         if(SceneManager.GetActiveScene().buildIndex != 0) {
             mainButtons.SetActive(false);
         }
 
+        if(SceneManager.GetActiveScene().buildIndex == 0) {
+            cursorHandler.SetCursorInMenuState(false);
+        }
+
     }
 
     public void GoBackToGameClick() {
         menuCanvas.enabled = false;
-        GetComponent<CursorHandler>().SetCursorInMenuState(true);
+        cursorHandler.SetCursorInMenuState(true);
         Time.timeScale = 1;
     }
 

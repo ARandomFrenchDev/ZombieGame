@@ -128,6 +128,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4606366574962860, guid: e7117fd563d8b834ab2a2e67b4511029, type: 3}
   m_PrefabInstance: {fileID: 1534255577}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &62079793 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 566975856156188075, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
+  m_PrefabInstance: {fileID: 8326325857005153770}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &88226819 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4978196553690158, guid: c4420a09fdc9c2d43aadbbbedf27d1e8, type: 3}
@@ -415,6 +426,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4200523030585234, guid: 0d671e00dc96c0345b01fd6a712a604b, type: 3}
   m_PrefabInstance: {fileID: 1732252306}
   m_PrefabAsset: {fileID: 0}
+--- !u!223 &275727759 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 1793890811, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
+  m_PrefabInstance: {fileID: 8326325857005153770}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &415046503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -607,7 +623,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1034,6 +1050,14 @@ PrefabInstance:
       propertyPath: settingsButtons
       value: 
       objectReference: {fileID: 690102341}
+    - target: {fileID: 8284784475333332816, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
+      propertyPath: taskText
+      value: 
+      objectReference: {fileID: 62079793}
+    - target: {fileID: 8284784475333332816, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
+      propertyPath: transitionCanvas
+      value: 
+      objectReference: {fileID: 275727759}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
 --- !u!1 &796723759
@@ -1997,6 +2021,10 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeMusicVolume
       objectReference: {fileID: 0}
+    - target: {fileID: 1793890806, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1926172820, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
       propertyPath: m_text
       value: LA TACHE EST SIMPLE...
@@ -2012,6 +2040,14 @@ PrefabInstance:
     - target: {fileID: 2128601594, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: MenuToSettingsButtonClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 8326325857307830616, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8326325858221168307, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8326325858881833416, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
       propertyPath: m_RootOrder

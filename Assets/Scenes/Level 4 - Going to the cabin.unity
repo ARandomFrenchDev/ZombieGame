@@ -5284,6 +5284,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 716259ae41e9d754080fa2e74a742fdf, type: 2}
+    - target: {fileID: 5852827079958307900, guid: 0dea1c0b87636f747b72901c7454c178, type: 3}
+      propertyPath: transitionCanvas
+      value: 
+      objectReference: {fileID: 8326325857005153779}
     - target: {fileID: 5852827079958307901, guid: 0dea1c0b87636f747b72901c7454c178, type: 3}
       propertyPath: m_Size.x
       value: 0.45036897
@@ -6066,3 +6070,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!223 &8326325857005153779 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 1793890811, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
+  m_PrefabInstance: {fileID: 8326325857005153770}
+  m_PrefabAsset: {fileID: 0}

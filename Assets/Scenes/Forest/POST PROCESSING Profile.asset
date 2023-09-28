@@ -139,15 +139,15 @@ MonoBehaviour:
   m_AdvancedMode: 0
   type:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 9
   intensity:
     m_OverrideState: 1
-    m_Value: 0.186
+    m_Value: 1
     min: 0
     max: 1
   response:
     m_OverrideState: 1
-    m_Value: 0.8
+    m_Value: 1
     min: 0
     max: 1
   texture:
@@ -263,7 +263,7 @@ MonoBehaviour:
     min: 0
   tint:
     m_OverrideState: 1
-    m_Value: {r: 0.5647059, g: 0.03529412, b: 0.027450982, a: 1}
+    m_Value: {r: 0, g: 0.23211932, b: 1, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1

@@ -7,7 +7,9 @@ using UnityEngine.SceneManagement;
 public class TaskHandler : MonoBehaviour
 {
     [SerializeField] TMP_Text taskText;
+    [SerializeField] Canvas transitionCanvas;
     [SerializeField] float gettingOutTimer = 60f;
+    [SerializeField] float lastTimer = 25f;
     public float taskScorePointsTotal = 0f;
     public int activeWeaponScene;
 
@@ -45,6 +47,7 @@ public class TaskHandler : MonoBehaviour
             activeWeaponScene = 1;
             canSwitchWeapon = true;
             taskText.text = "au revoir.";
+            Level6Countdown();
         } 
     }
 
@@ -56,6 +59,17 @@ public class TaskHandler : MonoBehaviour
         }
         taskText.text = Mathf.Round(gettingOutTimer).ToString();
 
+    }
+
+    private void Level6Countdown() {
+        lastTimer = lastTimer - Time.deltaTime;
+        transitionCanvas.GetComponent<Animator>().SetBool("isEnd", true);
+        if(lastTimer < 0.5f) {
+            SceneManager.LoadScene(0);
+        }
+        // setup timer for 25 seconds (to test)
+        // while the timer goes down, the transition black value alpha goes up
+        // when it's the timer is done, go back to main menu
     }
 
 }
