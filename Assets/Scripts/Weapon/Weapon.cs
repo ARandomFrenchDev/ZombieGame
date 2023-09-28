@@ -31,7 +31,7 @@ public class Weapon : MonoBehaviour
     void Update()
     {
         DisplayAmmoUI();
-        if(Input.GetKeyDown(KeyCode.Mouse0) && canShoot) {
+        if(Input.GetKeyDown(KeyCode.Mouse0) && canShoot && ammoType.ToString() != "Empty") {
             if(ammoSlot.GetAmmoCount(ammoType) > 0) {
                 StartCoroutine(Shoot());
                 // ShootWithoutWait();

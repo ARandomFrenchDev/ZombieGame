@@ -23,5 +23,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 5 - House.unity
     guid: 934be53ae6959ee4dbf2a1696e58c5b2
+  - enabled: 1
+    path: Assets/Scenes/Level 6 - Last rush.unity
+    guid: 32b1427147bb6354d9d75032a1044963
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}

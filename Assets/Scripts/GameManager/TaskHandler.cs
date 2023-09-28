@@ -44,7 +44,7 @@ public class TaskHandler : MonoBehaviour
         } else if(currentScene == 6) {
             activeWeaponScene = 1;
             canSwitchWeapon = true;
-            taskText.text = "FUIS.";
+            taskText.text = "au revoir.";
         } 
     }
 

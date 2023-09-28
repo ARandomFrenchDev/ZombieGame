@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1717619729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250740636374810958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc0cbea17874f2349bf4bc5f175f8f8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 5256582792438516735}
+  muzzleFlash: {fileID: 0}
+  hitEffect: {fileID: 0}
+  ammoSlot: {fileID: 5432258712460956293}
+  ammoType: 3
+  range: 100
+  damage: 99
+  timeBetweenShots: 100000000
+  ammoTypeTextUI: {fileID: 0}
+  ammoAmmountTextUI: {fileID: 0}
+  audioSource: {fileID: 0}
+  shootAudio: {fileID: 0}
+  emptyAudio: {fileID: 0}
+  hitAudio: {fileID: 0}
+  screamAudio: {fileID: 0}
+  canShoot: 0
 --- !u!1 &966408449430252506
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,6 +434,8 @@ MonoBehaviour:
     ammoAmount: 10
   - ammoType: 2
     ammoAmount: 5
+  - ammoType: 3
+    ammoAmount: 0
 --- !u!82 &1541610023
 AudioSource:
   m_ObjectHideFlags: 0
@@ -779,13 +809,25 @@ PrefabInstance:
       propertyPath: m_SpotAngle
       value: 23.540237
       objectReference: {fileID: 0}
+    - target: {fileID: 1906435038397059396, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
+      propertyPath: m_Name
+      value: "Fusil \xE0 pompes"
+      objectReference: {fileID: 0}
     - target: {fileID: 3381576729798087160, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 5432258712460956293}
     - target: {fileID: 3434280543989960091, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
+      propertyPath: m_Name
+      value: Pistolet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3434280543989960091, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3994997500204496212, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
+      propertyPath: m_Name
+      value: Mains vides
       objectReference: {fileID: 0}
     - target: {fileID: 5729711164840162798, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: ammoSlot
@@ -799,6 +841,10 @@ PrefabInstance:
       propertyPath: firstPersonController
       value: 
       objectReference: {fileID: 4872688537504060038}
+    - target: {fileID: 8380063739502155943, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
+      propertyPath: m_Name
+      value: Fusil d'assault
+      objectReference: {fileID: 0}
     - target: {fileID: 8380063739502155943, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -861,6 +907,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
+--- !u!1 &250740636374810958 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3994997500204496212, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
+  m_PrefabInstance: {fileID: 3750331120166859802}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5256582792438516733 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9005220659476430823, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
@@ -869,6 +920,11 @@ GameObject:
 --- !u!4 &5256582792438516728 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
+  m_PrefabInstance: {fileID: 3750331120166859802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &5256582792438516735 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 9005220659476430821, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
   m_PrefabInstance: {fileID: 3750331120166859802}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3750331120268775542

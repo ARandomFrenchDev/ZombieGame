@@ -1937,6 +1937,10 @@ PrefabInstance:
       propertyPath: taskText
       value: 
       objectReference: {fileID: 16854551}
+    - target: {fileID: 8284784475333332816, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
+      propertyPath: activeWeaponScene
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6071cf1d394295b4f9f07f49e5c1a6ab, type: 3}
 --- !u!114 &1548954555 stripped
@@ -2467,6 +2471,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 713722786}
     m_Modifications:
+    - target: {fileID: 1717619729, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: emptyAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 120a052f1f8cefa43a1195d72c0c2550, type: 3}
+    - target: {fileID: 1717619729, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: ammoTypeTextUI
+      value: 
+      objectReference: {fileID: 683250999}
+    - target: {fileID: 1717619729, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: ammoAmmountTextUI
+      value: 
+      objectReference: {fileID: 650958025}
     - target: {fileID: 2110608527, guid: aebf99355e977334b91716908f390a78, type: 3}
       propertyPath: m_audioClip
       value: 

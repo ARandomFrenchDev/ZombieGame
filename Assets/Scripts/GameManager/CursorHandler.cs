@@ -12,21 +12,23 @@ public class CursorHandler : MonoBehaviour
     float originalSpeed;
 
     void Awake() {
-        player = FindObjectOfType<FirstPersonController>();
-        originalSpeed = player.RotationSpeed;
-        starterAssetsInputs = FindObjectOfType<StarterAssetsInputs>();
+        if(SceneManager.GetActiveScene().buildIndex > 0) { 
+            player = FindObjectOfType<FirstPersonController>();
+            originalSpeed = player.RotationSpeed;
+            starterAssetsInputs = FindObjectOfType<StarterAssetsInputs>();
+        }
     }
 
     public void SetCursorInMenuState(bool state) {
-        player.RotationSpeed = state ? originalSpeed : 0;
         if(SceneManager.GetActiveScene().buildIndex > 0) {
+            player.RotationSpeed = state ? originalSpeed : 0;
             weapon = FindObjectOfType<Weapon>();
             weapon.canShoot = state;
+            starterAssetsInputs.cursorLocked = state;
+            starterAssetsInputs.cursorInputForLook = state;
+            starterAssetsInputs.SetCursorState(starterAssetsInputs.cursorLocked);
+            Cursor.visible = !state;
         }
-        starterAssetsInputs.cursorLocked = state;
-        starterAssetsInputs.cursorInputForLook = state;
-        starterAssetsInputs.SetCursorState(starterAssetsInputs.cursorLocked);
-        Cursor.visible = !state;
     }
 
 }

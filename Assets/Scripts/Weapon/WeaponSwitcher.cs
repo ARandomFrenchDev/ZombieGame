@@ -39,7 +39,7 @@ public class WeaponSwitcher : MonoBehaviour
             }
         } else if(Input.GetAxis("Mouse ScrollWheel") < 0){
             if(currentWeapon <= 0) {
-                currentWeapon = 2;
+                currentWeapon = 3;
             } else {
                 currentWeapon--;
             }
@@ -53,6 +53,8 @@ public class WeaponSwitcher : MonoBehaviour
             currentWeapon = 1;
         } else if(Input.GetKeyDown(KeyCode.Alpha3)) {
             currentWeapon = 2;
+        } else if(Input.GetKeyDown(KeyCode.Alpha4)) {
+            currentWeapon = 3;
         }
     }
 
@@ -62,15 +64,10 @@ public class WeaponSwitcher : MonoBehaviour
             if(weaponIndex == currentWeapon) {
                 weapon.gameObject.SetActive(true);
                 weapon.GetComponent<Weapon>().canShoot = true;
-                // weapon.GetComponent<Animator>().enabled = true;
             } else {
                 weapon.gameObject.SetActive(false);
-                // weapon.GetComponent<Animator>().Rebind();
-                // weapon.GetComponent<Animator>().enabled = false;
             }
             weaponIndex++;
         }
     }
-
-
 }
