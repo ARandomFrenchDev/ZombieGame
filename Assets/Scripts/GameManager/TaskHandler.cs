@@ -10,15 +10,16 @@ public class TaskHandler : MonoBehaviour
     [SerializeField] Canvas transitionCanvas;
     [SerializeField] float gettingOutTimer = 60f;
     [SerializeField] float lastTimer = 25f;
+    CursorHandler cursorHandler;
     public float taskScorePointsTotal = 0f;
     public int activeWeaponScene;
-
     public bool canSwitchWeapon = true;
-
+    void Awake() {
+        cursorHandler = GetComponent<CursorHandler>();
+    }
     void Update() {
         HandleTask();
     }
-
     void HandleTask() {
         int currentScene = SceneManager.GetActiveScene().buildIndex;
 
@@ -32,7 +33,7 @@ public class TaskHandler : MonoBehaviour
             canSwitchWeapon = false;
         } else if(currentScene == 3) {
             activeWeaponScene = 2;
-            canSwitchWeapon = true;
+            canSwitchWeapon = false;
             taskText.color = Color.red;
             Level3Countdown();
         } else if(currentScene == 4) {
@@ -50,7 +51,6 @@ public class TaskHandler : MonoBehaviour
             Level6Countdown();
         } 
     }
-
     private void Level3Countdown(){
         gettingOutTimer = gettingOutTimer - Time.deltaTime;
         if(gettingOutTimer < 0.5f) {
@@ -58,18 +58,13 @@ public class TaskHandler : MonoBehaviour
             player.HandleDeath();
         }
         taskText.text = Mathf.Round(gettingOutTimer).ToString();
-
     }
-
     private void Level6Countdown() {
         lastTimer = lastTimer - Time.deltaTime;
         transitionCanvas.GetComponent<Animator>().SetBool("isEnd", true);
         if(lastTimer < 0.5f) {
+            cursorHandler.SetCursorInMenuState(false);
             SceneManager.LoadScene(0);
         }
-        // setup timer for 25 seconds (to test)
-        // while the timer goes down, the transition black value alpha goes up
-        // when it's the timer is done, go back to main menu
     }
-
 }

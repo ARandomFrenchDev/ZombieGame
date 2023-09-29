@@ -16,13 +16,11 @@ public class MainMenu : MonoBehaviour
     void Awake() {
         cursorHandler = GetComponent<CursorHandler>();
     }
-
     void Start() {
         settingsButtons.SetActive(false);
         pauseButtons.SetActive(false);
         gameOverButtons.SetActive(false);
     }
-
     void Update() {
         if(Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().buildIndex != 0 && menuCanvas.enabled == false) {
             menuCanvas.enabled = true;
@@ -44,22 +42,18 @@ public class MainMenu : MonoBehaviour
         }
 
     }
-
     public void GoBackToGameClick() {
         menuCanvas.enabled = false;
         cursorHandler.SetCursorInMenuState(true);
         Time.timeScale = 1;
     }
-
     public void GoBackToMainMenuClick() {
         SceneManager.LoadScene(0);
     }
-
     public void PlayButtonClick() {
         SceneManager.LoadScene(1);
         Time.timeScale = 1;
     }
-
     public void MenuToSettingsButtonClick() {
         settingsButtons.SetActive(true);
         if(SceneManager.GetActiveScene().buildIndex != 0) {
@@ -68,7 +62,6 @@ public class MainMenu : MonoBehaviour
             mainButtons.SetActive(false);
         }
     }
-
     public void SettingsToMenuButtonClick() {
         settingsButtons.SetActive(false);
         if(SceneManager.GetActiveScene().buildIndex != 0) {
@@ -77,7 +70,6 @@ public class MainMenu : MonoBehaviour
             mainButtons.SetActive(true);
         }
     }
-
     public void QuitGameButtonClick() {
         Application.Quit();
     }

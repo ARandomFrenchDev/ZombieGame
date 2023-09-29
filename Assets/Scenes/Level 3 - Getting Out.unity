@@ -11035,6 +11035,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 713722786}
     m_Modifications:
+    - target: {fileID: 1717619729, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: emptyAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 120a052f1f8cefa43a1195d72c0c2550, type: 3}
+    - target: {fileID: 1717619729, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 2135335254}
+    - target: {fileID: 1717619729, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: ammoTypeTextUI
+      value: 
+      objectReference: {fileID: 683250999}
+    - target: {fileID: 1717619729, guid: aebf99355e977334b91716908f390a78, type: 3}
+      propertyPath: ammoAmmountTextUI
+      value: 
+      objectReference: {fileID: 650958025}
     - target: {fileID: 1938267845590050274, guid: aebf99355e977334b91716908f390a78, type: 3}
       propertyPath: ammoTypeTextUI
       value: 
@@ -11256,6 +11272,11 @@ Transform:
   m_Father: {fileID: 1055956543}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2135335254 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3920155595910306104, guid: aebf99355e977334b91716908f390a78, type: 3}
+  m_PrefabInstance: {fileID: 2110608523}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4339346451807588 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8131360039288160648, guid: a2b6464b4301e984ba27de92a1de49cc, type: 3}

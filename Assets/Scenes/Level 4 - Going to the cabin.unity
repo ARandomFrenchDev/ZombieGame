@@ -5894,6 +5894,10 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeMusicVolume
       objectReference: {fileID: 0}
+    - target: {fileID: 1552280246, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1634525278, guid: 3b5cdf78ec25acc49912a0172744a65b, type: 3}
       propertyPath: m_IsActive
       value: 1

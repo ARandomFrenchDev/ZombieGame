@@ -11,6 +11,13 @@ public class DeathHandler : MonoBehaviour
     [SerializeField] GameObject mainButtons;
     [SerializeField] GameObject pauseButtons;
     [SerializeField] GameObject gameOverButtons;
+
+    CursorHandler cursorHandler;
+
+    void Awake() {
+        cursorHandler = FindObjectOfType<CursorHandler>();
+    }
+
     public void HandleDeath() {
         if(SceneManager.GetActiveScene().buildIndex != 6) {
             menuCanvas.enabled = true;
@@ -19,8 +26,9 @@ public class DeathHandler : MonoBehaviour
             settingsButtons.SetActive(false);
             gameOverButtons.SetActive(true);
             Time.timeScale = 0;
-            FindObjectOfType<CursorHandler>().SetCursorInMenuState(false);
+            cursorHandler.SetCursorInMenuState(false);
         } else {
+            cursorHandler.SetCursorInMenuState(false);
             SceneManager.LoadScene(0);
         }
     }
